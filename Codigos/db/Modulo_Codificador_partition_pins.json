@@ -4,6 +4,10 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "s0",
+					"strict" : false
+				},
+				{
 					"name" : "s1",
 					"strict" : false
 				},
@@ -16,31 +20,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "s4",
+					"name" : "bit3",
 					"strict" : false
 				},
 				{
-					"name" : "s5",
+					"name" : "bit0",
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "bit2",
 					"strict" : false
 				},
 				{
-					"name" : "a",
-					"strict" : false
-				},
-				{
-					"name" : "d",
-					"strict" : false
-				},
-				{
-					"name" : "b",
-					"strict" : false
-				},
-				{
-					"name" : "c",
+					"name" : "bit1",
 					"strict" : false
 				}
 			]

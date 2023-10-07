@@ -1,4 +1,4 @@
-Fitter Status : Successful - Sat Oct 07 10:17:46 2023
+Fitter Status : Successful - Sat Oct 07 19:42:45 2023
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Modulo_Codificador
 Top-level Entity Name : Modulo_Codificador
@@ -7,7 +7,7 @@ Device : 5CGXFC7C7F23C8
 Timing Models : Final
 Logic utilization (in ALMs) : 3 / 56,480 ( < 1 % )
 Total registers : 0
-Total pins : 11 / 268 ( 4 % )
+Total pins : 8 / 268 ( 3 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 7,024,640 ( 0 % )
 Total RAM Blocks : 0 / 686 ( 0 % )
