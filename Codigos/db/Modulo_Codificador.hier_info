@@ -1,0 +1,31 @@
+|Modulo_Codificador
+a => s1.IN0
+a => s1.IN0
+a => s2.IN0
+b => s3.IN0
+b => s4.IN0
+b => s5.IN1
+b => s1.IN1
+b => s3.IN0
+c => s3.IN1
+c => s5.IN0
+c => s2.IN1
+c => s3.IN1
+d => s1.IN1
+d => s3.IN1
+d => s5.IN1
+d => s2.IN1
+d => s4.IN1
+s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
+s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
+s3 <= s3.DB_MAX_OUTPUT_PORT_TYPE
+s4 <= s4.DB_MAX_OUTPUT_PORT_TYPE
+s5 <= s5.DB_MAX_OUTPUT_PORT_TYPE
+entrada => ~NO_FANOUT~
+reset => s1.OUTPUTSELECT
+reset => s2.OUTPUTSELECT
+reset => s3.OUTPUTSELECT
+reset => s4.OUTPUTSELECT
+reset => s5.OUTPUTSELECT
+
+
