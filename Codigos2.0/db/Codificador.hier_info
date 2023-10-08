@@ -1,0 +1,44 @@
+|Codificador
+A => S0.IN0
+A => S1.IN0
+A => S2.IN0
+A => S2.IN0
+A => S0.IN0
+A => S1.IN0
+A => S2.IN0
+B => S0.IN0
+B => S0.IN1
+B => S1.IN0
+B => S2.IN1
+B => S0.IN0
+B => S1.IN1
+B => S2.IN1
+B => S3.IN0
+C => S0.IN1
+C => S1.IN1
+C => S2.IN1
+C => S0.IN1
+C => S0.IN1
+C => S1.IN1
+C => S2.IN1
+D => S0.IN1
+D => S0.IN1
+D => S2.IN1
+D => S2.IN1
+D => S0.IN1
+D => S1.IN1
+D => S1.IN1
+D => S2.IN1
+D => S3.IN1
+D => S3.IN1
+ready => S3~reg0.CLK
+ready => S2~reg0.CLK
+ready => S1~reg0.CLK
+ready => S0~reg0.CLK
+reset => ~NO_FANOUT~
+S0 <= S0~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= S1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= S2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= S3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
