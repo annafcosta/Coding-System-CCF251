@@ -10,52 +10,52 @@ z2
 cModel Technology
 Z0 dC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/simulation/modelsim
 vCodificador
-Z1 !s110 1696796111
+!s110 1696797756
 !i10b 1
 !s100 [[bjJm>3AVANGhY1XCca72
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IEUdM<]FWY1lIY6WLPhOc83
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1696790793
 8C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v
 FC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v
 !i122 0
 L0 6 38
-Z4 OV;L;2020.1;71
+Z3 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1696796110.000000
+!s108 1696797756.000000
 !s107 C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0|C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v|
 !i113 1
-Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0
-Z7 tCvgOpt 0
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0
+Z6 tCvgOpt 0
 n@codificador
 vTesteBench
-R1
+!s110 1696797757
 !i10b 1
-!s100 SRnXOB_Bi>UYfnTBhe31f2
+!s100 njSfKVan6LZ?M^GLA@bmo0
+R1
+IVd`gEKUKheT:>=2JWE9?m1
 R2
-I56Lm:kM3c^c]OZCnQcBPe2
-R3
 R0
-w1696795876
+w1696797652
 8C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v
 FC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v
 !i122 1
-L0 3 179
-R4
+L0 3 176
+R3
 r1
 !s85 0
 31
-!s108 1696796111.000000
+!s108 1696797757.000000
 !s107 C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0|C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v|
 !i113 1
+R4
 R5
 R6
-R7
 n@teste@bench

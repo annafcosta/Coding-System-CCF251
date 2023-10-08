@@ -12,29 +12,29 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:15:10 on Oct 08,2023
+# Start time: 17:42:36 on Oct 08,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v 
 # -- Compiling module Codificador
 # 
 # Top level modules:
 # 	Codificador
-# End time: 17:15:11 on Oct 08,2023, Elapsed time: 0:00:01
+# End time: 17:42:36 on Oct 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:15:11 on Oct 08,2023
+# Start time: 17:42:37 on Oct 08,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v 
 # -- Compiling module TesteBench
 # 
 # Top level modules:
 # 	TesteBench
-# End time: 17:15:11 on Oct 08,2023, Elapsed time: 0:00:00
+# End time: 17:42:37 on Oct 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  TesteBench
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" TesteBench 
-# Start time: 17:15:11 on Oct 08,2023
+# Start time: 17:42:37 on Oct 08,2023
 # Loading work.TesteBench
 # Loading work.Codificador
 # 
@@ -44,8 +44,6 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v(179)
+# ** Note: $stop    : C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v(176)
 #    Time: 45 ns  Iteration: 0  Instance: /TesteBench
-# Break in Module TesteBench at C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v line 179
-# End time: 17:31:18 on Oct 08,2023, Elapsed time: 0:16:07
-# Errors: 0, Warnings: 0
+# Break in Module TesteBench at C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v line 176

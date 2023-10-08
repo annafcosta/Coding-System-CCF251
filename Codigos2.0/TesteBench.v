@@ -3,7 +3,6 @@
 module TesteBench();
 	reg a, b, c, d, ready, reset;
 	wire s0, s1, s2, s3;
-	reg clk; // Adicione uma entrada de clock
 
 	Codificador tb(.A(a), .B(b), .C(c), .D(d), .ready(ready), .reset(reset), .S0(s0), .S1(s1), .S2(s2), .S3(s3));
 	
@@ -15,9 +14,7 @@ module TesteBench();
 		c = 0;
 		d = 0;
 		ready = 1;
-		
-		// Gerar um pulso de clock a cada 5 unidades de tempo
-		//#5 clk = ~clk;
+	
 		
 		
 		
