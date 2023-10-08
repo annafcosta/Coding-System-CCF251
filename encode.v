@@ -5,7 +5,7 @@ Codificador
 
 module encode (A, B, C, D, ready, reset, S0, S1, S2, S3);
 
-  // Definir as entradas de 4 bits:
+  // Definição das entradas de 4 bits:
   input wire A;
   input wire B;
   input wire C;
@@ -13,7 +13,7 @@ module encode (A, B, C, D, ready, reset, S0, S1, S2, S3);
   input wire ready;
   input wire reset;
 
-  // Definir as saídas:
+  // Definição das saídas:
   output reg S0;
   output reg S1;
   output reg S2;
