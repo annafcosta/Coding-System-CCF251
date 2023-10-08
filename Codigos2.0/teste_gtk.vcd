@@ -1,289 +1,76 @@
 $date
-	Sun Oct  8 16:55:04 2023
+	Sun Oct 08 17:31:11 2023
 $end
 $version
-	Icarus Verilog
+	ModelSim Version 2020.1
 $end
 $timescale
-	100ps
+	1ps
 $end
 $scope module TesteBench $end
-$var wire 1 ! s3 $end
-$var wire 1 " s2 $end
-$var wire 1 # s1 $end
-$var wire 1 $ s0 $end
-$var reg 1 % a $end
-$var reg 1 & b $end
-$var reg 1 ' c $end
-$var reg 1 ( clk $end
-$var reg 1 ) d $end
-$var reg 1 * ready $end
-$var reg 1 + reset $end
-$scope module tb $end
-$var wire 1 % A $end
-$var wire 1 & B $end
-$var wire 1 ' C $end
-$var wire 1 ) D $end
-$var wire 1 * ready $end
-$var wire 1 + reset $end
-$var reg 1 $ S0 $end
-$var reg 1 # S1 $end
-$var reg 1 " S2 $end
-$var reg 1 ! S3 $end
-$upscope $end
+$var wire 1 ! s2 $end
 $upscope $end
 $enddefinitions $end
-$comment Show the parameter values. $end
-$dumpall
-$end
-#50
-$dumpvars
-x+
-1*
-0)
-x(
-0'
-0&
-0%
-0$
-1#
-0"
-1!
-$end
-#60
-x!
-x"
-x#
-x$
-0*
-1+
-#70
+#0
 0!
-0"
-1#
-1$
-1*
-1)
-0+
-#90
-x!
-x"
-x#
-x$
-0*
-1+
-#100
-1!
-0"
-0#
-1$
-1*
-0)
-1'
-0+
-#120
-x!
-x"
-x#
-x$
-0*
-1+
-#130
 0!
-0"
-0#
-0$
-1*
-1)
-0+
-#150
+#1000
 x!
-x"
-x#
-x$
-0*
-1+
-#160
-1!
-0"
-0#
-0$
-1*
-0)
-0'
-1&
-0+
-#180
-x!
-x"
-x#
-x$
-0*
-1+
-#190
-1!
-1"
-1#
-1$
-1*
-1)
-0+
-#210
-x!
-x"
-x#
-x$
-0*
-1+
-#220
+#2000
 0!
-0"
-1#
-0$
-1*
-0)
-1'
-0+
-#240
+#4000
 x!
-x"
-x#
-x$
-0*
-1+
-#250
+#5000
+0!
+#7000
+x!
+#8000
+0!
+#10000
+x!
+#11000
+0!
+#13000
+x!
+#14000
 1!
-1"
-0#
-1$
-1*
-1)
-0+
-#270
+#16000
 x!
-x"
-x#
-x$
-0*
-1+
-#280
+#17000
+0!
+#19000
+x!
+#20000
 1!
-1"
-1#
-0$
-1*
-0)
-0'
-0&
-1%
-0+
-#300
+#22000
 x!
-x"
-x#
-x$
-0*
-1+
-#310
+#23000
 1!
-1"
-0#
-0$
-1*
-1)
-0+
-#330
+#25000
 x!
-x"
-x#
-x$
-0*
-1+
-#340
+#26000
 1!
-0"
-1#
-1$
-1*
-0)
-1'
-0+
-#360
+#28000
 x!
-x"
-x#
-x$
-0*
-1+
-#370
+#29000
 0!
-1"
-0#
-0$
-1*
-1)
-0+
-#390
+#31000
 x!
-x"
-x#
-x$
-0*
-1+
-#400
-0!
-1"
-1#
-1$
-1*
-0)
-0'
-1&
-0+
-#420
+#32000
+1!
+#34000
 x!
-x"
-x#
-x$
-0*
-1+
-#430
-0!
-0"
-0#
-1$
-1*
-1)
-0+
-#450
+#35000
+1!
+#37000
 x!
-x"
-x#
-x$
-0*
-1+
-#460
+#38000
 0!
-1"
-1#
-0$
-1*
-0)
-1'
-0+
-#480
+#40000
 x!
-x"
-x#
-x$
-0*
-1+
-#490
-0!
-1"
-0#
-1$
-1*
-1)
-0+
-#500
+#41000
+1!
+#43000
+x!
+#44000
+1!

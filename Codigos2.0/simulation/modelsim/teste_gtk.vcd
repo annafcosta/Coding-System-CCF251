@@ -1,0 +1,34 @@
+$date
+	Sun Oct 08 17:15:19 2023
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module TesteBench $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 1 # c $end
+$var reg 1 $ d $end
+$var reg 1 % ready $end
+$var reg 1 & reset $end
+$var wire 1 ' s0 $end
+$var wire 1 ( s1 $end
+$var wire 1 ) s2 $end
+$var wire 1 * s3 $end
+$var reg 1 + clk $end
+
+$scope module tb $end
+$var wire 1 , A $end
+$var wire 1 - B $end
+$var wire 1 . C $end
+$var wire 1 / D $end
+$var wire 1 0 ready $end
+$var wire 1 1 reset $end
+$var reg 1 2 S0 $end
+$var reg 1 3 S1 $end
+$var reg 1 4 S2 $end
+$var reg 1 5 S3 $end
