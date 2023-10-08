@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/simulation/modelsim
 vCodificador
-!s110 1696797756
+!s110 1696802203
 !i10b 1
 !s100 [[bjJm>3AVANGhY1XCca72
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -26,7 +26,7 @@ Z3 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1696797756.000000
+!s108 1696802203.000000
 !s107 C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0|C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v|
 !i113 1
@@ -35,7 +35,7 @@ Z5 !s92 -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-
 Z6 tCvgOpt 0
 n@codificador
 vTesteBench
-!s110 1696797757
+!s110 1696802204
 !i10b 1
 !s100 njSfKVan6LZ?M^GLA@bmo0
 R1
@@ -51,7 +51,7 @@ R3
 r1
 !s85 0
 31
-!s108 1696797757.000000
+!s108 1696802204.000000
 !s107 C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0|C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v|
 !i113 1
