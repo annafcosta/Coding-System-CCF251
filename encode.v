@@ -25,7 +25,9 @@ module encode (A, B, C, D, ready, reset, S0, S1, S2, S3);
       S1 <= 0;
       S2 <= 0;
       S3 <= 0;
-    end else begin
+    end 
+    
+    else begin
       // Definição das expressões booleanas:
       S0 <= (~A & ~C & ~D) | (~B & C & ~D) | (B & D) | (A & B & ~C);
       // Função do 1º bit descrita por A'C'D' + B'CD' + BD + ABC'
