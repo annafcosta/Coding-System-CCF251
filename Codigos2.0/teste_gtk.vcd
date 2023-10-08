@@ -1,0 +1,289 @@
+$date
+	Sun Oct  8 16:55:04 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module TesteBench $end
+$var wire 1 ! s3 $end
+$var wire 1 " s2 $end
+$var wire 1 # s1 $end
+$var wire 1 $ s0 $end
+$var reg 1 % a $end
+$var reg 1 & b $end
+$var reg 1 ' c $end
+$var reg 1 ( clk $end
+$var reg 1 ) d $end
+$var reg 1 * ready $end
+$var reg 1 + reset $end
+$scope module tb $end
+$var wire 1 % A $end
+$var wire 1 & B $end
+$var wire 1 ' C $end
+$var wire 1 ) D $end
+$var wire 1 * ready $end
+$var wire 1 + reset $end
+$var reg 1 $ S0 $end
+$var reg 1 # S1 $end
+$var reg 1 " S2 $end
+$var reg 1 ! S3 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#50
+$dumpvars
+x+
+1*
+0)
+x(
+0'
+0&
+0%
+0$
+1#
+0"
+1!
+$end
+#60
+x!
+x"
+x#
+x$
+0*
+1+
+#70
+0!
+0"
+1#
+1$
+1*
+1)
+0+
+#90
+x!
+x"
+x#
+x$
+0*
+1+
+#100
+1!
+0"
+0#
+1$
+1*
+0)
+1'
+0+
+#120
+x!
+x"
+x#
+x$
+0*
+1+
+#130
+0!
+0"
+0#
+0$
+1*
+1)
+0+
+#150
+x!
+x"
+x#
+x$
+0*
+1+
+#160
+1!
+0"
+0#
+0$
+1*
+0)
+0'
+1&
+0+
+#180
+x!
+x"
+x#
+x$
+0*
+1+
+#190
+1!
+1"
+1#
+1$
+1*
+1)
+0+
+#210
+x!
+x"
+x#
+x$
+0*
+1+
+#220
+0!
+0"
+1#
+0$
+1*
+0)
+1'
+0+
+#240
+x!
+x"
+x#
+x$
+0*
+1+
+#250
+1!
+1"
+0#
+1$
+1*
+1)
+0+
+#270
+x!
+x"
+x#
+x$
+0*
+1+
+#280
+1!
+1"
+1#
+0$
+1*
+0)
+0'
+0&
+1%
+0+
+#300
+x!
+x"
+x#
+x$
+0*
+1+
+#310
+1!
+1"
+0#
+0$
+1*
+1)
+0+
+#330
+x!
+x"
+x#
+x$
+0*
+1+
+#340
+1!
+0"
+1#
+1$
+1*
+0)
+1'
+0+
+#360
+x!
+x"
+x#
+x$
+0*
+1+
+#370
+0!
+1"
+0#
+0$
+1*
+1)
+0+
+#390
+x!
+x"
+x#
+x$
+0*
+1+
+#400
+0!
+1"
+1#
+1$
+1*
+0)
+0'
+1&
+0+
+#420
+x!
+x"
+x#
+x$
+0*
+1+
+#430
+0!
+0"
+0#
+1$
+1*
+1)
+0+
+#450
+x!
+x"
+x#
+x$
+0*
+1+
+#460
+0!
+1"
+1#
+0$
+1*
+0)
+1'
+0+
+#480
+x!
+x"
+x#
+x$
+0*
+1+
+#490
+0!
+1"
+0#
+1$
+1*
+1)
+0+
+#500

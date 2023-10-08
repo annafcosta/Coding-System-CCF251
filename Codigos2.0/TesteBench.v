@@ -15,9 +15,12 @@ module TesteBench();
 		c = 0;
 		d = 0;
 		ready = 1;
-	
+		
 		// Gerar um pulso de clock a cada 5 unidades de tempo
 		#5 clk = ~clk;
+		
+		$dumpfile("teste_gtk.vcd");
+      		$dumpvars;
 		
 		// Testando para cada numero
 		// 1;
