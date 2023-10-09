@@ -44,7 +44,9 @@ ___
 ___
 ### 🟣 Autores
 ___
-Anna Lúisa Ferreira Costa (4409). [[User-GitHub]](https://github.com/annafcosta)
+Anna Lúisa Ferreira Costa. [[User-GitHub]](https://github.com/annafcosta)
+
+Gabriel Benez Duarte Costa. [[User-GitHub]](https://github.com/gabriel2036)
 
 
 
