@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Codificador
-Sun Oct 08 17:41:05 2023
+Mon Oct 23 21:32:48 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 08 17:41:05 2023       ;
+; Analysis & Synthesis Status     ; Successful - Mon Oct 23 21:32:48 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Codificador                                 ;
-; Top-level Entity Name           ; Codificador                                 ;
+; Top-level Entity Name           ; Display                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 4                                           ;
-; Total pins                      ; 10                                          ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 20                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -69,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; Codificador        ; Codificador        ;
+; Top-level entity name                                                           ; Display            ; Codificador        ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -172,6 +172,7 @@ https://fpgasoftware.intel.com/eula.
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                  ; Library ;
 +----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
 ; Codificador.v                    ; yes             ; User Verilog HDL File  ; C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v ;         ;
+; Display.v                        ; yes             ; User Verilog HDL File  ; C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Display.v     ;         ;
 +----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
 
 
@@ -180,25 +181,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------+
 ; Resource                                    ; Usage   ;
 +---------------------------------------------+---------+
-; Estimate of Logic utilization (ALMs needed) ; 2       ;
+; Estimate of Logic utilization (ALMs needed) ; 5       ;
 ;                                             ;         ;
-; Combinational ALUT usage for logic          ; 4       ;
+; Combinational ALUT usage for logic          ; 9       ;
 ;     -- 7 input functions                    ; 0       ;
 ;     -- 6 input functions                    ; 0       ;
 ;     -- 5 input functions                    ; 0       ;
-;     -- 4 input functions                    ; 4       ;
+;     -- 4 input functions                    ; 9       ;
 ;     -- <=3 input functions                  ; 0       ;
 ;                                             ;         ;
-; Dedicated logic registers                   ; 4       ;
+; Dedicated logic registers                   ; 0       ;
 ;                                             ;         ;
-; I/O pins                                    ; 10      ;
+; I/O pins                                    ; 20      ;
 ;                                             ;         ;
 ; Total DSP Blocks                            ; 0       ;
 ;                                             ;         ;
-; Maximum fan-out node                        ; D~input ;
-; Maximum fan-out                             ; 4       ;
-; Total fan-out                               ; 38      ;
-; Average fan-out                             ; 1.36    ;
+; Maximum fan-out node                        ; a~input ;
+; Maximum fan-out                             ; 9       ;
+; Total fan-out                               ; 69      ;
+; Average fan-out                             ; 1.41    ;
 +---------------------------------------------+---------+
 
 
@@ -207,7 +208,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |Codificador               ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 10   ; 0            ; |Codificador        ; Codificador ; work         ;
+; |Display                   ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 20   ; 0            ; |Display            ; Display     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -217,7 +218,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4     ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -232,15 +233,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 4                           ;
-;     plain             ; 4                           ;
-; arriav_lcell_comb     ; 4                           ;
-;     normal            ; 4                           ;
-;         4 data inputs ; 4                           ;
-; boundary_port         ; 10                          ;
+; arriav_lcell_comb     ; 16                          ;
+;     normal            ; 16                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 6                           ;
+;         4 data inputs ; 9                           ;
+; boundary_port         ; 20                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.62                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.75                        ;
 +-----------------------+-----------------------------+
 
 
@@ -259,28 +260,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Oct 08 17:40:53 2023
+    Info: Processing started: Mon Oct 23 21:32:37 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Codificador -c Codificador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file codificador.v
-    Info (12023): Found entity 1: Codificador File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file testebench.v
-    Info (12023): Found entity 1: TesteBench File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v Line: 3
-Info (12127): Elaborating entity "Codificador" for the top level hierarchy
+    Info (12023): Found entity 1: Codificador File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file testbench.v
+    Info (12023): Found entity 1: TestBench File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TestBench.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file display.v
+    Info (12023): Found entity 1: Display File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Display.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_display.v
+    Info (12023): Found entity 1: tb_display File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Tb_display.v Line: 1
+Info (12127): Elaborating entity "Display" for the top level hierarchy
+Info (12128): Elaborating entity "Codificador" for hierarchy "Codificador:en" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Display.v Line: 6
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "dse[0]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Display.v Line: 4
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "reset" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v Line: 14
-Info (21057): Implemented 14 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ready" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Display.v Line: 2
+    Warning (15610): No output dependent on input pin "reset" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Display.v Line: 2
+Info (21057): Implemented 29 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 4 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4796 megabytes
-    Info: Processing ended: Sun Oct 08 17:41:05 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:28
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 9 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4798 megabytes
+    Info: Processing ended: Mon Oct 23 21:32:48 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:25
 
 

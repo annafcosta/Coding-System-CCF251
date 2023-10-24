@@ -1,13 +1,13 @@
-Fitter Status : Successful - Sun Oct 08 17:41:53 2023
+Fitter Status : Successful - Mon Oct 23 21:33:34 2023
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Codificador
-Top-level Entity Name : Codificador
+Top-level Entity Name : Display
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
-Logic utilization (in ALMs) : 3 / 56,480 ( < 1 % )
-Total registers : 4
-Total pins : 10 / 268 ( 4 % )
+Logic utilization (in ALMs) : 5 / 56,480 ( < 1 % )
+Total registers : 0
+Total pins : 20 / 268 ( 7 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 7,024,640 ( 0 % )
 Total RAM Blocks : 0 / 686 ( 0 % )

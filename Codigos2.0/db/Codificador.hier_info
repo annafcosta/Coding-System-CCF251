@@ -1,4 +1,27 @@
-|Codificador
+|Display
+a => a.IN1
+b => b.IN1
+c => c.IN1
+d => d.IN1
+ready => ready.IN1
+reset => reset.IN1
+dse[0] << <GND>
+dse[1] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+dse[2] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+dse[3] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+dse[4] << WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+dse[5] << WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+dse[6] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+dsd[0] << WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+dsd[1] << WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+dsd[2] << WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+dsd[3] << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+dsd[4] << dsd.DB_MAX_OUTPUT_PORT_TYPE
+dsd[5] << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+dsd[6] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Display|Codificador:en
 A => S0.IN0
 A => S1.IN0
 A => S2.IN0
@@ -31,14 +54,11 @@ D => S1.IN1
 D => S2.IN1
 D => S3.IN1
 D => S3.IN1
-ready => S3~reg0.CLK
-ready => S2~reg0.CLK
-ready => S1~reg0.CLK
-ready => S0~reg0.CLK
+ready => ~NO_FANOUT~
 reset => ~NO_FANOUT~
-S0 << S0~reg0.DB_MAX_OUTPUT_PORT_TYPE
-S1 << S1~reg0.DB_MAX_OUTPUT_PORT_TYPE
-S2 << S2~reg0.DB_MAX_OUTPUT_PORT_TYPE
-S3 << S3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S0 <= S0.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= S1.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= S2.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= S3.DB_MAX_OUTPUT_PORT_TYPE
 
 

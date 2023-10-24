@@ -12,45 +12,60 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:56:43 on Oct 08,2023
+# Start time: 21:30:57 on Oct 23,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v 
 # -- Compiling module Codificador
 # 
 # Top level modules:
 # 	Codificador
-# End time: 18:56:43 on Oct 08,2023, Elapsed time: 0:00:00
+# End time: 21:30:57 on Oct 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Display.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:56:44 on Oct 08,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v 
-# -- Compiling module TesteBench
+# Start time: 21:30:57 on Oct 23,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Display.v 
+# -- Compiling module Display
 # 
 # Top level modules:
-# 	TesteBench
-# End time: 18:56:44 on Oct 08,2023, Elapsed time: 0:00:00
+# 	Display
+# End time: 21:30:58 on Oct 23,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  TesteBench
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" TesteBench 
-# Start time: 18:56:44 on Oct 08,2023
-# Loading work.TesteBench
-# Loading work.Codificador
+# vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Tb_display.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:30:58 on Oct 23,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Tb_display.v 
+# -- Compiling module tb_display
 # 
-# add wave *
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: gabri  Hostname: NOTEBOOK-WIN  ProcessID: 10100
-#           Attempting to use alternate WLF file "./wlftremik9".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftremik9
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# ** Note: $stop    : C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v(176)
-#    Time: 45 ns  Iteration: 0  Instance: /TesteBench
-# Break in Module TesteBench at C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/TesteBench.v line 176
-# End time: 19:01:28 on Oct 08,2023, Elapsed time: 0:04:44
-# Errors: 0, Warnings: 2
+# Top level modules:
+# 	tb_display
+# End time: 21:30:58 on Oct 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  Tb_display
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" Tb_display 
+# Start time: 21:30:58 on Oct 23,2023
+# ** Error: (vsim-3170) Could not find 'Tb_display'.
+#         Searched libraries:
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+#             C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/simulation/modelsim/rtl_work
+#             C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Codificador_run_msim_rtl_verilog.do PAUSED at line 13
+vsim work.tb_display
+# vsim work.tb_display 
+# Start time: 21:30:58 on Oct 23,2023
+# Loading work.tb_display
+# Loading work.Display
+# Loading work.Codificador
+# End time: 21:31:51 on Oct 23,2023, Elapsed time: 0:00:53
+# Errors: 1, Warnings: 0
