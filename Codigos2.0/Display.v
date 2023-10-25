@@ -1,8 +1,8 @@
 module Display (a, b, c, d, ready, reset, dse, dsd);
 	input wire a, b, c, d, ready, reset;
 	wire s0, s1, s2, s3;
-	output reg [6:0] dse;
-	output reg [6:0] dsd;
+	output reg [0:6] dse;
+	output reg [0:6] dsd;
 	Codificador en(.A(a), .B(b), .C(c), .D(d), .ready(ready), .reset(reset), .S0(s0), .S1(s1), .S2(s2), .S3(s3));
 	
 	
@@ -49,8 +49,8 @@ module Display (a, b, c, d, ready, reset, dse, dsd);
 							dse = 7'b0000000;
 						end
 			4'b1010: begin
-							dsd = 7'b0110000;
-							dse = 7'b1111110;
+							dsd = 7'b1111110;
+							dse = 7'b0110000;
 						end
 			4'b1011: begin 
 							dsd = 7'b0110000;

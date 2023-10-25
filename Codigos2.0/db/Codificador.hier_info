@@ -5,20 +5,20 @@ c => c.IN1
 d => d.IN1
 ready => ready.IN1
 reset => reset.IN1
-dse[0] << <GND>
-dse[1] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-dse[2] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-dse[3] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-dse[4] << WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-dse[5] << WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-dse[6] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-dsd[0] << WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-dsd[1] << WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-dsd[2] << WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-dsd[3] << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-dsd[4] << dsd.DB_MAX_OUTPUT_PORT_TYPE
-dsd[5] << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-dsd[6] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+dse[6] <= <GND>
+dse[5] <= <GND>
+dse[4] <= <GND>
+dse[3] <= <GND>
+dse[2] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+dse[1] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+dse[0] <= <GND>
+dsd[6] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+dsd[5] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+dsd[4] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+dsd[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+dsd[2] <= dsd.DB_MAX_OUTPUT_PORT_TYPE
+dsd[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+dsd[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Display|Codificador:en

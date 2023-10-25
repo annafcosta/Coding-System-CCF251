@@ -1,5 +1,5 @@
 Fitter report for Codificador
-Mon Oct 23 21:33:34 2023
+Tue Oct 24 21:50:53 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Mon Oct 23 21:33:34 2023       ;
+; Fitter Status                   ; Successful - Tue Oct 24 21:50:52 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Codificador                                 ;
 ; Top-level Entity Name           ; Display                                     ;
@@ -163,8 +163,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 50 ) ; 0.00 % ( 0 / 50 )          ; 0.00 % ( 0 / 50 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 50 ) ; 0.00 % ( 0 / 50 )          ; 0.00 % ( 0 / 50 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 49 ) ; 0.00 % ( 0 / 49 )          ; 0.00 % ( 0 / 49 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 49 ) ; 0.00 % ( 0 / 49 )          ; 0.00 % ( 0 / 49 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -187,7 +187,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 50 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 49 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -223,11 +223,11 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ;     -- Logic LABs                                           ; 2                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 10                 ;       ;
+; Combinational ALUT usage for logic                          ; 9                  ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
 ;     -- 6 input functions                                    ; 0                  ;       ;
 ;     -- 5 input functions                                    ; 0                  ;       ;
-;     -- 4 input functions                                    ; 9                  ;       ;
+;     -- 4 input functions                                    ; 8                  ;       ;
 ;     -- <=3 input functions                                  ; 1                  ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
 ;                                                             ;                    ;       ;
@@ -272,11 +272,11 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.1% / 0.0% / 0.2% ;       ;
-; Maximum fan-out                                             ; 9                  ;       ;
-; Highest non-global fan-out                                  ; 9                  ;       ;
-; Total fan-out                                               ; 69                 ;       ;
-; Average fan-out                                             ; 1.38               ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.1% / 0.1% / 0.1% ;       ;
+; Maximum fan-out                                             ; 8                  ;       ;
+; Highest non-global fan-out                                  ; 8                  ;       ;
+; Total fan-out                                               ; 61                 ;       ;
+; Average fan-out                                             ; 1.24               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -305,11 +305,11 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ;     -- Logic LABs                                           ; 2                   ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
-; Combinational ALUT usage for logic                          ; 10                  ; 0                              ;
+; Combinational ALUT usage for logic                          ; 9                   ; 0                              ;
 ;     -- 7 input functions                                    ; 0                   ; 0                              ;
 ;     -- 6 input functions                                    ; 0                   ; 0                              ;
 ;     -- 5 input functions                                    ; 0                   ; 0                              ;
-;     -- 4 input functions                                    ; 9                   ; 0                              ;
+;     -- 4 input functions                                    ; 8                   ; 0                              ;
 ;     -- <=3 input functions                                  ; 1                   ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                   ; 0                              ;
 ; Memory ALUT usage                                           ; 0                   ; 0                              ;
@@ -338,7 +338,7 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ;     -- Registered Output Connections                        ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; Internal Connections                                        ;                     ;                                ;
-;     -- Total Connections                                    ; 69                  ; 0                              ;
+;     -- Total Connections                                    ; 61                  ; 0                              ;
 ;     -- Registered Connections                               ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; External Connections                                        ;                     ;                                ;
@@ -371,12 +371,12 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; a     ; K22   ; 5B       ; 89           ; 38           ; 54           ; 9                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; b     ; N21   ; 5B       ; 89           ; 35           ; 94           ; 9                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; c     ; N16   ; 5B       ; 89           ; 35           ; 43           ; 9                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; d     ; P18   ; 5A       ; 89           ; 9            ; 54           ; 9                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; ready ; R15   ; 5A       ; 89           ; 6            ; 20           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; reset ; D12   ; 7A       ; 50           ; 81           ; 40           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; a     ; A9    ; 8A       ; 36           ; 81           ; 51           ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; b     ; G8    ; 8A       ; 38           ; 81           ; 51           ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; c     ; H8    ; 8A       ; 38           ; 81           ; 34           ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; d     ; J9    ; 8A       ; 36           ; 81           ; 0            ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; ready ; C8    ; 8A       ; 28           ; 81           ; 51           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; reset ; T19   ; 5A       ; 89           ; 4            ; 77           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -385,39 +385,39 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 +--------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
-; dsd[0] ; M16   ; 5B       ; 89           ; 35           ; 60           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; dsd[1] ; M22   ; 5B       ; 89           ; 36           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; dsd[2] ; M18   ; 5B       ; 89           ; 36           ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; dsd[3] ; N20   ; 5B       ; 89           ; 35           ; 77           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; dsd[4] ; L22   ; 5B       ; 89           ; 36           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; dsd[5] ; M20   ; 5B       ; 89           ; 37           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; dsd[6] ; M21   ; 5B       ; 89           ; 37           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; dse[0] ; H14   ; 7A       ; 60           ; 81           ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; dse[1] ; L18   ; 5B       ; 89           ; 38           ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; dse[2] ; K21   ; 5B       ; 89           ; 38           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; dse[3] ; N19   ; 5B       ; 89           ; 36           ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; dse[4] ; K17   ; 5B       ; 89           ; 37           ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; dse[5] ; L17   ; 5B       ; 89           ; 37           ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; dse[6] ; L19   ; 5B       ; 89           ; 38           ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; dsd[0] ; H9    ; 8A       ; 36           ; 81           ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; dsd[1] ; B5    ; 8A       ; 34           ; 81           ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; dsd[2] ; A10   ; 8A       ; 36           ; 81           ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; dsd[3] ; C9    ; 8A       ; 34           ; 81           ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; dsd[4] ; A5    ; 8A       ; 34           ; 81           ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; dsd[5] ; E10   ; 8A       ; 32           ; 81           ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; dsd[6] ; B10   ; 8A       ; 34           ; 81           ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; dse[0] ; A8    ; 8A       ; 30           ; 81           ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; dse[1] ; J8    ; 8A       ; 38           ; 81           ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; dse[2] ; J7    ; 8A       ; 38           ; 81           ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; dse[3] ; T17   ; 5A       ; 89           ; 4            ; 60           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; dse[4] ; AA22  ; 4A       ; 64           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; dse[5] ; AA8   ; 3B       ; 30           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; dse[6] ; E9    ; 8A       ; 28           ; 81           ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------+
-; I/O Bank Usage                                                              ;
-+----------+-------------------+---------------+--------------+---------------+
-; I/O Bank ; Usage             ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
-+----------+-------------------+---------------+--------------+---------------+
-; B2L      ; 0 / 0 ( -- )      ; --            ; --           ; --            ;
-; B1L      ; 0 / 14 ( 0 % )    ; --            ; --           ; --            ;
-; B0L      ; 0 / 14 ( 0 % )    ; --            ; --           ; --            ;
-; 3A       ; 0 / 16 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
-; 3B       ; 0 / 32 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
-; 4A       ; 0 / 48 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
-; 5A       ; 2 / 16 ( 13 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 5B       ; 16 / 16 ( 100 % ) ; 2.5V          ; --           ; 2.5V          ;
-; 7A       ; 2 / 80 ( 3 % )    ; 2.5V          ; --           ; 2.5V          ;
-; 8A       ; 0 / 32 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
-+----------+-------------------+---------------+--------------+---------------+
++----------------------------------------------------------------------------+
+; I/O Bank Usage                                                             ;
++----------+------------------+---------------+--------------+---------------+
+; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
++----------+------------------+---------------+--------------+---------------+
+; B2L      ; 0 / 0 ( -- )     ; --            ; --           ; --            ;
+; B1L      ; 0 / 14 ( 0 % )   ; --            ; --           ; --            ;
+; B0L      ; 0 / 14 ( 0 % )   ; --            ; --           ; --            ;
+; 3A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 3B       ; 1 / 32 ( 3 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 4A       ; 1 / 48 ( 2 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 5A       ; 2 / 16 ( 13 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 5B       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 7A       ; 0 / 80 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 8A       ; 16 / 32 ( 50 % ) ; 2.5V          ; --           ; 2.5V          ;
++----------+------------------+---------------+--------------+---------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -429,12 +429,12 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; A2       ; 538        ; 9A       ; ^MSEL2                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; A3       ;            ; --       ; VCCBAT                          ; power  ;              ; 1.2V                ; --           ;                 ; --       ; --           ;
 ; A4       ; 540        ; 9A       ; ^nCONFIG                        ;        ;              ;                     ; --           ;                 ; --       ; --           ;
-; A5       ; 466        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; A5       ; 466        ; 8A       ; dsd[4]                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; A6       ;            ; 8A       ; VCCIO8A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; A7       ; 475        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; A8       ; 473        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; A9       ; 464        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; A10      ; 462        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; A8       ; 473        ; 8A       ; dse[0]                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; A9       ; 464        ; 8A       ; a                               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; A10      ; 462        ; 8A       ; dsd[2]                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; A11      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; A12      ; 444        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; A13      ; 432        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -454,7 +454,7 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; AA5      ; 47         ; 3A       ; ^AS_DATA2, DATA2                ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
 ; AA6      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA7      ; 105        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AA8      ; 108        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AA8      ; 108        ; 3B       ; dse[5]                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AA9      ; 115        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA10     ; 113        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA11     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -468,7 +468,7 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; AA19     ; 156        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA20     ; 158        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA21     ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AA22     ; 163        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AA22     ; 163        ; 4A       ; dse[4]                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AB1      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB2      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB3      ; 49         ; 3A       ; ^AS_DATA1, DATA1                ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
@@ -495,12 +495,12 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; B2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B3       ;            ;          ; DNU                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B4       ;            ;          ; DNU                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
-; B5       ; 468        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; B5       ; 468        ; 8A       ; dsd[1]                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; B6       ; 470        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; B7       ; 472        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; B8       ;            ; 8A       ; VREFB8AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B9       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; B10      ; 465        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; B10      ; 465        ; 8A       ; dsd[6]                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; B11      ; 452        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; B12      ; 442        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; B13      ; 430        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -520,8 +520,8 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; C5       ; 542        ; 9A       ; ^GND                            ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; C6       ; 474        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; C7       ;            ; 8A       ; VCCIO8A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; C8       ; 480        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; C9       ; 467        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; C8       ; 480        ; 8A       ; ready                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; C9       ; 467        ; 8A       ; dsd[3]                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; C10      ;            ; 7A, 8A   ; VCCPD7A8A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; C11      ; 450        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; C12      ;            ; 7A       ; VCCIO7A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -546,7 +546,7 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; D9       ; 479        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; D10      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; D11      ;            ; --       ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; D12      ; 449        ; 7A       ; reset                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; D12      ; 449        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; D13      ; 441        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; D14      ;            ; 7A, 8A   ; VCCPD7A8A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; D15      ;            ; 7A       ; VCCIO7A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -565,8 +565,8 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; E6       ;            ; --       ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; E7       ; 484        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; E8       ;            ; 8A       ; VCCIO8A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; E9       ; 477        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; E10      ; 469        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; E9       ; 477        ; 8A       ; dse[6]                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; E10      ; 469        ; 8A       ; dsd[5]                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; E11      ;            ; 7A, 8A   ; VCCPD7A8A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; E12      ; 451        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; E13      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -608,7 +608,7 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; G5       ; 537        ; 9A       ; ^nCE                            ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; G6       ; 481        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; G7       ;            ; 8A       ; VCCIO8A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; G8       ; 460        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; G8       ; 460        ; 8A       ; b                               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; G9       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; G10      ; 453        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; G11      ; 438        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -630,13 +630,13 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; H5       ; 536        ; 9A       ; ^nSTATUS                        ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; H6       ; 483        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; H7       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; H8       ; 458        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; H9       ; 463        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; H8       ; 458        ; 8A       ; c                               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; H9       ; 463        ; 8A       ; dsd[0]                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; H10      ; 436        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; H11      ; 445        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; H12      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; H13      ; 437        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; H14      ; 429        ; 7A       ; dse[0]                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; H14      ; 429        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; H15      ; 423        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; H16      ; 421        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; H17      ;            ; 7A       ; VCCIO7A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -651,9 +651,9 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; J4       ;            ; --       ; VCCE_GXBL                       ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; J5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; J6       ; 535        ; 9A       ; ^MSEL1                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
-; J7       ; 457        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; J8       ; 459        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; J9       ; 461        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; J7       ; 457        ; 8A       ; dse[2]                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; J8       ; 459        ; 8A       ; dse[1]                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; J9       ; 461        ; 8A       ; d                               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; J10      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; J11      ; 434        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; J12      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
@@ -683,12 +683,12 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; K14      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; K15      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; K16      ; 424        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; K17      ; 284        ; 5B       ; dse[4]                          ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; K17      ; 284        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; K18      ;            ; 5B       ; VCCIO5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; K19      ; 407        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; K20      ; 405        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; K21      ; 289        ; 5B       ; dse[2]                          ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; K22      ; 291        ; 5B       ; a                               ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; K21      ; 289        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; K22      ; 291        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; L1       ; 27         ; B1L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; L2       ; 26         ; B1L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; L3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -705,12 +705,12 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; L14      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; L15      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; L16      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
-; L17      ; 286        ; 5B       ; dse[5]                          ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; L18      ; 290        ; 5B       ; dse[1]                          ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; L19      ; 288        ; 5B       ; dse[6]                          ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; L17      ; 286        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; L18      ; 290        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; L19      ; 288        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; L20      ;            ; 5B       ; VREFB5BN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; L21      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; L22      ; 283        ; 5B       ; dsd[4]                          ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; L22      ; 283        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; M1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M3       ;            ; --       ; VCCH_GXBL                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -726,13 +726,13 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; M13      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; M14      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M15      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
-; M16      ; 278        ; 5B       ; dsd[0]                          ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; M16      ; 278        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; M17      ;            ; 5B       ; VCCPD5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; M18      ; 282        ; 5B       ; dsd[2]                          ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; M18      ; 282        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; M19      ;            ; 5B       ; VCCIO5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; M20      ; 285        ; 5B       ; dsd[5]                          ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; M21      ; 287        ; 5B       ; dsd[6]                          ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; M22      ; 281        ; 5B       ; dsd[1]                          ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; M20      ; 285        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; M21      ; 287        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; M22      ; 281        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; N1       ; 28         ; B0L      ; GXB_NC                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N2       ; 29         ; B0L      ; GXB_NC                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -748,12 +748,12 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; N13      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N14      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; N15      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; N16      ; 276        ; 5B       ; c                               ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; N16      ; 276        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; N17      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N18      ;            ; 5B       ; VCCPD5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; N19      ; 280        ; 5B       ; dse[3]                          ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; N20      ; 277        ; 5B       ; dsd[3]                          ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; N21      ; 279        ; 5B       ; b                               ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; N19      ; 280        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; N20      ; 277        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; N21      ; 279        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; N22      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; P1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; P2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -772,7 +772,7 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; P15      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; P16      ; 225        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; P17      ; 227        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; P18      ; 226        ; 5A       ; d                               ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; P18      ; 226        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; P19      ; 224        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; P20      ;            ; 5A       ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; P21      ;            ; 5A       ; VCCPD5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -791,7 +791,7 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; R12      ; 121        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; R13      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; R14      ; 170        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; R15      ; 219        ; 5A       ; ready                           ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; R15      ; 219        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; R16      ; 221        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; R17      ; 223        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; R18      ;            ; 5A       ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -815,9 +815,9 @@ The pin-out file can be found in C:/Users/gabri/Documents/GitHub/Coding-System-C
 ; T14      ; 152        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T15      ; 217        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; T16      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; T17      ; 215        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; T17      ; 215        ; 5A       ; dse[3]                          ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; T18      ; 213        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; T19      ; 212        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; T19      ; 212        ; 5A       ; reset                           ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; T20      ; 214        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; T21      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; T22      ; 216        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
@@ -920,44 +920,44 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------+-------------------------------+
 ; ready    ; Incomplete set of assignments ;
 ; reset    ; Incomplete set of assignments ;
-; dse[0]   ; Incomplete set of assignments ;
-; dse[1]   ; Incomplete set of assignments ;
-; dse[2]   ; Incomplete set of assignments ;
-; dse[3]   ; Incomplete set of assignments ;
-; dse[4]   ; Incomplete set of assignments ;
-; dse[5]   ; Incomplete set of assignments ;
 ; dse[6]   ; Incomplete set of assignments ;
-; dsd[0]   ; Incomplete set of assignments ;
-; dsd[1]   ; Incomplete set of assignments ;
-; dsd[2]   ; Incomplete set of assignments ;
-; dsd[3]   ; Incomplete set of assignments ;
-; dsd[4]   ; Incomplete set of assignments ;
-; dsd[5]   ; Incomplete set of assignments ;
+; dse[5]   ; Incomplete set of assignments ;
+; dse[4]   ; Incomplete set of assignments ;
+; dse[3]   ; Incomplete set of assignments ;
+; dse[2]   ; Incomplete set of assignments ;
+; dse[1]   ; Incomplete set of assignments ;
+; dse[0]   ; Incomplete set of assignments ;
 ; dsd[6]   ; Incomplete set of assignments ;
+; dsd[5]   ; Incomplete set of assignments ;
+; dsd[4]   ; Incomplete set of assignments ;
+; dsd[3]   ; Incomplete set of assignments ;
+; dsd[2]   ; Incomplete set of assignments ;
+; dsd[1]   ; Incomplete set of assignments ;
+; dsd[0]   ; Incomplete set of assignments ;
 ; a        ; Incomplete set of assignments ;
-; b        ; Incomplete set of assignments ;
 ; c        ; Incomplete set of assignments ;
 ; d        ; Incomplete set of assignments ;
+; b        ; Incomplete set of assignments ;
 ; ready    ; Missing location assignment   ;
 ; reset    ; Missing location assignment   ;
-; dse[0]   ; Missing location assignment   ;
-; dse[1]   ; Missing location assignment   ;
-; dse[2]   ; Missing location assignment   ;
-; dse[3]   ; Missing location assignment   ;
-; dse[4]   ; Missing location assignment   ;
-; dse[5]   ; Missing location assignment   ;
 ; dse[6]   ; Missing location assignment   ;
-; dsd[0]   ; Missing location assignment   ;
-; dsd[1]   ; Missing location assignment   ;
-; dsd[2]   ; Missing location assignment   ;
-; dsd[3]   ; Missing location assignment   ;
-; dsd[4]   ; Missing location assignment   ;
-; dsd[5]   ; Missing location assignment   ;
+; dse[5]   ; Missing location assignment   ;
+; dse[4]   ; Missing location assignment   ;
+; dse[3]   ; Missing location assignment   ;
+; dse[2]   ; Missing location assignment   ;
+; dse[1]   ; Missing location assignment   ;
+; dse[0]   ; Missing location assignment   ;
 ; dsd[6]   ; Missing location assignment   ;
+; dsd[5]   ; Missing location assignment   ;
+; dsd[4]   ; Missing location assignment   ;
+; dsd[3]   ; Missing location assignment   ;
+; dsd[2]   ; Missing location assignment   ;
+; dsd[1]   ; Missing location assignment   ;
+; dsd[0]   ; Missing location assignment   ;
 ; a        ; Missing location assignment   ;
-; b        ; Missing location assignment   ;
 ; c        ; Missing location assignment   ;
 ; d        ; Missing location assignment   ;
+; b        ; Missing location assignment   ;
 +----------+-------------------------------+
 
 
@@ -966,7 +966,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
-; |Display                   ; 5.0 (5.0)            ; 5.0 (5.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (10)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 20   ; 0            ; |Display            ; Display     ; work         ;
+; |Display                   ; 4.5 (4.5)            ; 4.5 (4.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (9)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 20   ; 0            ; |Display            ; Display     ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -978,24 +978,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 ; ready  ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; reset  ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; dse[0] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; dse[1] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; dse[2] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; dse[3] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; dse[4] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; dse[5] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; dse[6] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; dsd[0] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; dsd[1] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; dsd[2] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; dsd[3] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; dsd[4] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; dsd[5] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; dse[5] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; dse[4] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; dse[3] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; dse[2] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; dse[1] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; dse[0] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; dsd[6] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; dsd[5] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; dsd[4] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; dsd[3] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; dsd[2] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; dsd[1] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; dsd[0] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; a      ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; b      ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; c      ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; c      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; d      ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; b      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +--------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -1007,17 +1007,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ready               ;                   ;         ;
 ; reset               ;                   ;         ;
 ; a                   ;                   ;         ;
-;      - Decoder0~0   ; 1                 ; 0       ;
-;      - WideOr6~0    ; 1                 ; 0       ;
-;      - WideOr5~0    ; 1                 ; 0       ;
-;      - WideOr4~0    ; 1                 ; 0       ;
-;      - WideOr3~0    ; 1                 ; 0       ;
-;      - WideOr2~0    ; 1                 ; 0       ;
-;      - dsd~0        ; 1                 ; 0       ;
-;      - WideOr1~0    ; 1                 ; 0       ;
-;      - WideOr0~0    ; 1                 ; 0       ;
-; b                   ;                   ;         ;
-;      - Decoder0~0   ; 1                 ; 0       ;
 ;      - WideOr6~0    ; 1                 ; 0       ;
 ;      - WideOr5~0    ; 1                 ; 0       ;
 ;      - WideOr4~0    ; 1                 ; 0       ;
@@ -1027,17 +1016,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - WideOr1~0    ; 1                 ; 0       ;
 ;      - WideOr0~0    ; 1                 ; 0       ;
 ; c                   ;                   ;         ;
-;      - Decoder0~0   ; 1                 ; 0       ;
-;      - WideOr6~0    ; 1                 ; 0       ;
-;      - WideOr5~0    ; 1                 ; 0       ;
-;      - WideOr4~0    ; 1                 ; 0       ;
-;      - WideOr3~0    ; 1                 ; 0       ;
-;      - WideOr2~0    ; 1                 ; 0       ;
-;      - dsd~0        ; 1                 ; 0       ;
-;      - WideOr1~0    ; 1                 ; 0       ;
-;      - WideOr0~0    ; 1                 ; 0       ;
+;      - WideOr6~0    ; 0                 ; 0       ;
+;      - WideOr5~0    ; 0                 ; 0       ;
+;      - WideOr4~0    ; 0                 ; 0       ;
+;      - WideOr3~0    ; 0                 ; 0       ;
+;      - WideOr2~0    ; 0                 ; 0       ;
+;      - dsd~0        ; 0                 ; 0       ;
+;      - WideOr1~0    ; 0                 ; 0       ;
+;      - WideOr0~0    ; 0                 ; 0       ;
 ; d                   ;                   ;         ;
-;      - Decoder0~0   ; 1                 ; 0       ;
 ;      - WideOr6~0    ; 1                 ; 0       ;
 ;      - WideOr5~0    ; 1                 ; 0       ;
 ;      - WideOr4~0    ; 1                 ; 0       ;
@@ -1046,6 +1033,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - dsd~0        ; 1                 ; 0       ;
 ;      - WideOr1~0    ; 1                 ; 0       ;
 ;      - WideOr0~0    ; 1                 ; 0       ;
+; b                   ;                   ;         ;
+;      - WideOr6~0    ; 0                 ; 0       ;
+;      - WideOr5~0    ; 0                 ; 0       ;
+;      - WideOr4~0    ; 0                 ; 0       ;
+;      - WideOr3~0    ; 0                 ; 0       ;
+;      - WideOr2~0    ; 0                 ; 0       ;
+;      - dsd~0        ; 0                 ; 0       ;
+;      - WideOr1~0    ; 0                 ; 0       ;
+;      - WideOr0~0    ; 0                 ; 0       ;
 +---------------------+-------------------+---------+
 
 
@@ -1054,22 +1050,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+------------------------+
 ; Routing Resource Type        ; Usage                  ;
 +------------------------------+------------------------+
-; Block interconnects          ; 15 / 374,484 ( < 1 % ) ;
+; Block interconnects          ; 13 / 374,484 ( < 1 % ) ;
 ; C12 interconnects            ; 0 / 16,664 ( 0 % )     ;
-; C2 interconnects             ; 9 / 155,012 ( < 1 % )  ;
-; C4 interconnects             ; 9 / 72,600 ( < 1 % )   ;
+; C2 interconnects             ; 10 / 155,012 ( < 1 % ) ;
+; C4 interconnects             ; 4 / 72,600 ( < 1 % )   ;
 ; DQS bus muxes                ; 0 / 30 ( 0 % )         ;
 ; DQS-18 I/O buses             ; 0 / 30 ( 0 % )         ;
 ; DQS-9 I/O buses              ; 0 / 30 ( 0 % )         ;
-; Direct links                 ; 2 / 374,484 ( < 1 % )  ;
+; Direct links                 ; 0 / 374,484 ( 0 % )    ;
 ; Global clocks                ; 0 / 16 ( 0 % )         ;
 ; Horizontal periphery clocks  ; 0 / 72 ( 0 % )         ;
 ; Local interconnects          ; 0 / 112,960 ( 0 % )    ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
 ; R14 interconnects            ; 0 / 15,868 ( 0 % )     ;
 ; R14/C12 interconnect drivers ; 0 / 27,256 ( 0 % )     ;
-; R3 interconnects             ; 2 / 169,296 ( < 1 % )  ;
-; R6 interconnects             ; 2 / 330,800 ( < 1 % )  ;
+; R3 interconnects             ; 10 / 169,296 ( < 1 % ) ;
+; R6 interconnects             ; 1 / 330,800 ( < 1 % )  ;
 ; Spine clocks                 ; 0 / 480 ( 0 % )        ;
 ; Wire stub REs                ; 0 / 20,834 ( 0 % )     ;
 +------------------------------+------------------------+
@@ -1136,24 +1132,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; ready              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; reset              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; dse[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; dse[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; dse[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; dse[3]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; dse[4]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; dse[5]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; dse[6]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; dsd[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; dsd[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; dsd[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; dsd[3]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; dsd[4]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; dsd[5]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; dse[5]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; dse[4]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; dse[3]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; dse[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; dse[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; dse[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; dsd[6]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; dsd[5]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; dsd[4]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; dsd[3]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; dsd[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; dsd[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; dsd[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; a                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; b                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; c                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; d                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; b                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
 
@@ -1217,7 +1213,7 @@ Info (184021): Fitter periphery placement operations ending: elapsed time is 00:
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:09
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:11
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Codificador.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -1233,23 +1229,23 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X78_Y35 to location X89_Y45
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X33_Y70 to location X44_Y81
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.18 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:05
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:07
 Info (144001): Generated suppressed messages file C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/output_files/Codificador.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6305 megabytes
-    Info: Processing ended: Mon Oct 23 21:33:34 2023
-    Info: Elapsed time: 00:00:45
-    Info: Total CPU time (on all processors): 00:01:13
+    Info: Peak virtual memory: 6349 megabytes
+    Info: Processing ended: Tue Oct 24 21:50:54 2023
+    Info: Elapsed time: 00:01:06
+    Info: Total CPU time (on all processors): 00:01:30
 
 
 +----------------------------+

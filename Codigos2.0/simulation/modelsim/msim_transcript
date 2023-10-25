@@ -12,60 +12,72 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:30:57 on Oct 23,2023
+# Start time: 21:52:16 on Oct 24,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Codificador.v 
 # -- Compiling module Codificador
 # 
 # Top level modules:
 # 	Codificador
-# End time: 21:30:57 on Oct 23,2023, Elapsed time: 0:00:00
+# End time: 21:52:16 on Oct 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Display.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:30:57 on Oct 23,2023
+# Start time: 21:52:17 on Oct 24,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Display.v 
 # -- Compiling module Display
 # 
 # Top level modules:
 # 	Display
-# End time: 21:30:58 on Oct 23,2023, Elapsed time: 0:00:01
+# End time: 21:52:17 on Oct 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Tb_display.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:30:58 on Oct 23,2023
+# Start time: 21:52:17 on Oct 24,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Tb_display.v 
-# -- Compiling module tb_display
+# -- Compiling module Tb_display
 # 
 # Top level modules:
-# 	tb_display
-# End time: 21:30:58 on Oct 23,2023, Elapsed time: 0:00:00
+# 	Tb_display
+# End time: 21:52:17 on Oct 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  Tb_display
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" Tb_display 
-# Start time: 21:30:58 on Oct 23,2023
-# ** Error: (vsim-3170) Could not find 'Tb_display'.
-#         Searched libraries:
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/220model
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/sgate
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_mf
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_lnsim
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
-#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
-#             C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/simulation/modelsim/rtl_work
-#             C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/simulation/modelsim/rtl_work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./Codificador_run_msim_rtl_verilog.do PAUSED at line 13
-vsim work.tb_display
-# vsim work.tb_display 
-# Start time: 21:30:58 on Oct 23,2023
-# Loading work.tb_display
+# Start time: 21:52:17 on Oct 24,2023
+# Loading work.Tb_display
 # Loading work.Display
 # Loading work.Codificador
-# End time: 21:31:51 on Oct 23,2023, Elapsed time: 0:00:53
-# Errors: 1, Warnings: 0
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: gabri  Hostname: NOTEBOOK-WIN  ProcessID: 10100
+#           Attempting to use alternate WLF file "./wlfte51q2b".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfte51q2b
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Entradas = 0000, Saida display esquerdo = 0110000,Saida display direito = 1111110
+# Entradas = 0001, Saida display esquerdo = 0000000,Saida display direito = 1111001
+# Entradas = 0010, Saida display esquerdo = 0000000,Saida display direito = 1110011
+# Entradas = 0011, Saida display esquerdo = 0000000,Saida display direito = 1111110
+# Entradas = 0100, Saida display esquerdo = 0000000,Saida display direito = 1111111
+# Entradas = 0101, Saida display esquerdo = 0110000,Saida display direito = 1011011
+# Entradas = 0110, Saida display esquerdo = 0000000,Saida display direito = 1101101
+# Entradas = 0111, Saida display esquerdo = 0110000,Saida display direito = 1111001
+# Entradas = 1000, Saida display esquerdo = 0110000,Saida display direito = 0110011
+# Entradas = 1001, Saida display esquerdo = 0110000,Saida display direito = 1101101
+# Entradas = 1010, Saida display esquerdo = 0110000,Saida display direito = 0110000
+# Entradas = 1011, Saida display esquerdo = 0000000,Saida display direito = 0110011
+# Entradas = 1100, Saida display esquerdo = 0000000,Saida display direito = 1110000
+# Entradas = 1101, Saida display esquerdo = 0000000,Saida display direito = 0110000
+# Entradas = 1110, Saida display esquerdo = 0000000,Saida display direito = 1011111
+# Entradas = 1111, Saida display esquerdo = 0000000,Saida display direito = 1011011
+# ** Note: $stop    : C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Tb_display.v(239)
+#    Time: 192 ps  Iteration: 0  Instance: /Tb_display
+# Break in Module Tb_display at C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/Codigos2.0/Tb_display.v line 239
+# End time: 21:52:50 on Oct 24,2023, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 2
