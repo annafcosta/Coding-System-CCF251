@@ -1,0 +1,78 @@
+# Reading pref.tcl
+# do Codificador_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/TP\ Definitivo {C:/Users/gabri/Documents/TP Definitivo/Codificador.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:42:03 on Oct 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/TP Definitivo" C:/Users/gabri/Documents/TP Definitivo/Codificador.v 
+# -- Compiling module Codificador
+# 
+# Top level modules:
+# 	Codificador
+# End time: 00:42:03 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/TP\ Definitivo {C:/Users/gabri/Documents/TP Definitivo/Display.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:42:03 on Oct 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/TP Definitivo" C:/Users/gabri/Documents/TP Definitivo/Display.v 
+# -- Compiling module Display
+# 
+# Top level modules:
+# 	Display
+# End time: 00:42:03 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/TP\ Definitivo {C:/Users/gabri/Documents/TP Definitivo/TestBench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:42:03 on Oct 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/TP Definitivo" C:/Users/gabri/Documents/TP Definitivo/TestBench.v 
+# -- Compiling module TestBench
+# 
+# Top level modules:
+# 	TestBench
+# End time: 00:42:04 on Oct 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TestBench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TestBench 
+# Start time: 00:42:04 on Oct 27,2023
+# Loading work.TestBench
+# Loading work.Display
+# Loading work.Codificador
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Entradas = 0000, Saida display esquerdo = 1001111,Saida display direito = 0000001
+# Entradas = 0001, Saida display esquerdo = 1111111,Saida display direito = 0000110
+# Entradas = 0010, Saida display esquerdo = 1111111,Saida display direito = 0001100
+# Entradas = 0011, Saida display esquerdo = 1111111,Saida display direito = 0000001
+# Entradas = 0100, Saida display esquerdo = 1111111,Saida display direito = 0000000
+# Entradas = 0101, Saida display esquerdo = 1001111,Saida display direito = 0100100
+# Entradas = 0110, Saida display esquerdo = 1111111,Saida display direito = 0010010
+# Entradas = 0111, Saida display esquerdo = 1001111,Saida display direito = 0000110
+# Entradas = 1000, Saida display esquerdo = 1001111,Saida display direito = 1001100
+# Entradas = 1001, Saida display esquerdo = 1001111,Saida display direito = 0010010
+# Entradas = 1010, Saida display esquerdo = 1001111,Saida display direito = 1001111
+# Entradas = 1011, Saida display esquerdo = 1111111,Saida display direito = 1001100
+# Entradas = 1100, Saida display esquerdo = 1111111,Saida display direito = 0001111
+# Entradas = 1101, Saida display esquerdo = 1111111,Saida display direito = 1001111
+# Entradas = 1110, Saida display esquerdo = 1111111,Saida display direito = 0100000
+# Entradas = 1111, Saida display esquerdo = 1111111,Saida display direito = 0100100
+# ** Note: $stop    : C:/Users/gabri/Documents/TP Definitivo/TestBench.v(240)
+#    Time: 226 ns  Iteration: 0  Instance: /TestBench
+# Break in Module TestBench at C:/Users/gabri/Documents/TP Definitivo/TestBench.v line 240
+# End time: 00:43:18 on Oct 27,2023, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 0

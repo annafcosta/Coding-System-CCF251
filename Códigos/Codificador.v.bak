@@ -1,0 +1,27 @@
+module Codificador(
+  input wire A,
+  input wire B,
+  input wire C,
+  input wire D,
+  input wire Ready,
+  input wire Reset,
+  output wire S0,
+  output wire S1,
+  output wire S2,
+  output wire S3
+);
+
+  // Definição das expressões booleanas reduzidas via k-map:
+  assign S0 = (~A & ~C & D & Ready) | (~B & C & ~D & Ready) | (B & D & Ready) | (A & B & ~C & Ready) | Reset;
+  // Função do 1º bit descrita por A'C'D + B'CD' + BD + ABC'
+
+  assign S1 = (~A & ~C & ~D & Ready) | (~B & ~C & D & Ready) | (B & C & ~D & Ready) | (A & ~D & Ready) | Reset;
+  // Função do 2º bit descrita por A'B'C' + A'C'D + BCD' + AD
+
+  assign S2 = (~A & B & D & Ready) | (A & ~B & ~C & Ready) | (A & C & D & Ready) | (A & B & ~D & Ready) | Reset;
+  // Função do 3º bit descrita por A'BD + AB'C' + BCD + AB'D
+
+  assign S3 = (~A & ~C & ~D & Ready) | (~B & ~D & Ready) | (~A & B & D & Ready) | (A & ~B & ~C & Ready) | Reset;
+  // Função do 4º bit descrita por A'C'D' + B'D' + A'BD + AB'C'
+
+endmodule
