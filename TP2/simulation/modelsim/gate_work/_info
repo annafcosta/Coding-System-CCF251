@@ -1,0 +1,60 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/simulation/modelsim
+vhard_block
+!s110 1700795419
+!i10b 1
+!s100 Q:@?F0RKFS5CgHOni5@S[3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I1_``[R8UmkG_fI5DLd4Oj2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1700795385
+Z4 8Lot.vo
+Z5 FLot.vo
+!i122 0
+L0 387 34
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1700795418.000000
+!s107 Lot.vo|
+Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Lot.vo|
+!i113 1
+Z9 o-vlog01compat -work work
+Z10 !s92 -vlog01compat -work work +incdir+.
+Z11 tCvgOpt 0
+vLot
+!s110 1700795418
+!i10b 1
+!s100 0TEgo7:gPQ:O<bWPLjUI<1
+R1
+IGYQHaHaRmJ3FZPhnNRO3c0
+R2
+R0
+R3
+R4
+R5
+!i122 0
+L0 32 354
+R6
+r1
+!s85 0
+31
+R7
+Z12 !s107 Lot.vo|
+R8
+!i113 1
+R9
+R10
+R11
+n@lot

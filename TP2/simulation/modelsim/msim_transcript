@@ -1,0 +1,118 @@
+# Reading pref.tcl
+# do Lot_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:30:23 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v 
+# -- Compiling module Lot
+# 
+# Top level modules:
+# 	Lot
+# End time: 16:30:23 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.Lot
+# vsim work.Lot 
+# Start time: 16:30:34 on Nov 24,2023
+# Loading work.Lot
+add wave -position insertpoint  \
+sim:/Lot/clk \
+sim:/Lot/fim \
+sim:/Lot/insere \
+sim:/Lot/premio \
+sim:/Lot/reset \
+sim:/Lot/state
+force -freeze sim:/Lot/clk 1 0, 0 {50 ps} -r 100
+run
+run
+force -freeze sim:/Lot/insere 1 0
+add wave -position insertpoint  \
+sim:/Lot/num
+force -freeze sim:/Lot/num 0100 0
+run
+run
+force -freeze sim:/Lot/num 0111 0
+run
+run
+force -freeze sim:/Lot/reset 1 0
+run
+force -freeze sim:/Lot/reset 0 0
+force -freeze sim:/Lot/num 0100 0
+run
+run
+force -freeze sim:/Lot/insere 0 0
+run
+force -freeze sim:/Lot/insere 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/Lot/insere 0 0
+run
+run
+run
+run
+force -freeze sim:/Lot/insere 1 0
+run
+force -freeze sim:/Lot/insere 0 0
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/Lot/insere 1 0
+force -freeze sim:/Lot/state 0101 0
+force -freeze sim:/Lot/state 0111 0
+run
+force -freeze sim:/Lot/reset 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/Lot/reset 1 0
+run
+run
+run
+run
+run
+noforce sim:/Lot/state
+run
+run
+run
+run
+force -freeze sim:/Lot/num 0100 0
+force -freeze sim:/Lot/insere 1 0
+force -freeze sim:/Lot/reset 0 0
+run
+force -freeze sim:/Lot/num 0111 0
+run
+run
+run
+run
+run
+# End time: 17:15:19 on Nov 24,2023, Elapsed time: 0:44:45
+# Errors: 0, Warnings: 0

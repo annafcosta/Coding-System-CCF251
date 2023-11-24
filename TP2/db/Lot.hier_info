@@ -1,0 +1,29 @@
+|Lot
+clk => state~2.DATAIN
+num[3] => Equal0.IN3
+num[3] => Equal1.IN2
+num[2] => Equal0.IN2
+num[2] => Equal1.IN1
+num[1] => Equal0.IN0
+num[1] => Equal1.IN0
+num[0] => Equal0.IN1
+num[0] => Equal1.IN3
+reset => state.s0.IN0
+fim => ~NO_FANOUT~
+fim_jogo => state.s0.IN1
+insere => always0.IN0
+insere => always0.IN0
+premio[1] << <GND>
+premio[0] << <GND>
+p1[4] << <GND>
+p1[3] << <GND>
+p1[2] << <GND>
+p1[1] << <GND>
+p1[0] << <GND>
+p2[4] << <GND>
+p2[3] << <GND>
+p2[2] << <GND>
+p2[1] << <GND>
+p2[0] << <GND>
+
+
