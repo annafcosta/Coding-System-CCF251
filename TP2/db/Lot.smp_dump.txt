@@ -1,6 +1,13 @@
 
+State Machine - |Lot|astate
+Name astate.s3 
+astate.s2 0 
+astate.s3 1 
+
 State Machine - |Lot|state
-Name state.s0 state.s2 state.s1 
-state.s0 0 0 0 
-state.s1 1 0 1 
-state.s2 1 1 0 
+Name state.s3 state.s2 state.s1 state.s0 state.s4 
+state.s0 0 0 0 0 0 
+state.s1 0 0 1 1 0 
+state.s2 0 1 0 1 0 
+state.s3 1 0 0 1 0 
+state.s4 0 0 0 1 1 

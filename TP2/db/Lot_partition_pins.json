@@ -2,7 +2,88 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "premio[1]",
+					"strict" : false
+				},
+				{
+					"name" : "premio[0]",
+					"strict" : false
+				},
+				{
+					"name" : "p1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "p1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "p1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "p1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "p1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "p2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "p2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "p2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "p2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "p2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "num[3]",
+					"strict" : false
+				},
+				{
+					"name" : "num[0]",
+					"strict" : false
+				},
+				{
+					"name" : "num[2]",
+					"strict" : false
+				},
+				{
+					"name" : "num[1]",
+					"strict" : false
+				},
+				{
+					"name" : "insere",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "fim_jogo",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

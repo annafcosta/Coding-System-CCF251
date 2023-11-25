@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lot
-Fri Nov 24 16:29:26 2023
+Sat Nov 25 19:39:20 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,14 +13,16 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |Lot|state
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |Lot
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  8. State Machine - |Lot|astate
+  9. State Machine - |Lot|state
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |Lot
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+ 17. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -47,15 +49,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 24 16:29:26 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 25 19:39:20 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Lot                                         ;
 ; Top-level Entity Name              ; Lot                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
+; Total logic elements               ; 39                                          ;
+;     Total combinational functions  ; 39                                          ;
+;     Dedicated logic registers      ; 18                                          ;
+; Total registers                    ; 18                                          ;
 ; Total pins                         ; 21                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -159,10 +161,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -175,35 +178,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 21    ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; fim   ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 21    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 39        ;
+;                                             ;           ;
+; Total combinational functions               ; 39        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 20        ;
+;     -- 3 input functions                    ; 3         ;
+;     -- <=2 input functions                  ; 16        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 31        ;
+;     -- arithmetic mode                      ; 8         ;
+;                                             ;           ;
+; Total registers                             ; 18        ;
+;     -- Dedicated logic registers            ; 18        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 21        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 18        ;
+; Total fan-out                               ; 217       ;
+; Average fan-out                             ; 2.19      ;
++---------------------------------------------+-----------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,21 +215,34 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |Lot                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |Lot                ; Lot         ; work         ;
+; |Lot                       ; 39 (39)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |Lot                ; Lot         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+-------------------------------------------+
-; State Machine - |Lot|state                ;
-+----------+----------+----------+----------+
-; Name     ; state.s0 ; state.s2 ; state.s1 ;
-+----------+----------+----------+----------+
-; state.s0 ; 0        ; 0        ; 0        ;
-; state.s1 ; 1        ; 0        ; 1        ;
-; state.s2 ; 1        ; 1        ; 0        ;
-+----------+----------+----------+----------+
++-----------------------------+
+; State Machine - |Lot|astate ;
++-----------+-----------------+
+; Name      ; astate.s3       ;
++-----------+-----------------+
+; astate.s2 ; 0               ;
+; astate.s3 ; 1               ;
++-----------+-----------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------+
+; State Machine - |Lot|state                                      ;
++----------+----------+----------+----------+----------+----------+
+; Name     ; state.s3 ; state.s2 ; state.s1 ; state.s0 ; state.s4 ;
++----------+----------+----------+----------+----------+----------+
+; state.s0 ; 0        ; 0        ; 0        ; 0        ; 0        ;
+; state.s1 ; 0        ; 0        ; 1        ; 1        ; 0        ;
+; state.s2 ; 0        ; 1        ; 0        ; 1        ; 0        ;
+; state.s3 ; 1        ; 0        ; 0        ; 1        ; 0        ;
+; state.s4 ; 0        ; 0        ; 0        ; 1        ; 1        ;
++----------+----------+----------+----------+----------+----------+
 
 
 +------------------------------------------------------------+
@@ -233,12 +250,13 @@ Encoding Type:  One-Hot
 +---------------------------------------+--------------------+
 ; Register name                         ; Reason for Removal ;
 +---------------------------------------+--------------------+
-; state~7                               ; Lost fanout        ;
+; astate~5                              ; Lost fanout        ;
+; astate~6                              ; Lost fanout        ;
+; astate~7                              ; Lost fanout        ;
 ; state~8                               ; Lost fanout        ;
-; state.s1                              ; Lost fanout        ;
-; state.s2                              ; Lost fanout        ;
-; state.s0                              ; Lost fanout        ;
-; Total Number of Removed Registers = 5 ;                    ;
+; state~9                               ; Lost fanout        ;
+; state~11                              ; Lost fanout        ;
+; Total Number of Removed Registers = 6 ;                    ;
 +---------------------------------------+--------------------+
 
 
@@ -247,12 +265,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 18    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 17    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 12    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -262,6 +280,9 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |Lot|p2[4]~reg0            ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Lot|astate.s2             ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Lot|state                 ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Lot|state                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
@@ -276,11 +297,6 @@ Encoding Type:  One-Hot
 ; s2             ; 0010  ; Unsigned Binary                            ;
 ; s3             ; 0011  ; Unsigned Binary                            ;
 ; s4             ; 0100  ; Unsigned Binary                            ;
-; sg1            ; 0101  ; Unsigned Binary                            ;
-; sg2            ; 0110  ; Unsigned Binary                            ;
-; sc1            ; 0111  ; Unsigned Binary                            ;
-; sc2            ; 1000  ; Unsigned Binary                            ;
-; si             ; 1001  ; Unsigned Binary                            ;
 +----------------+-------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -291,12 +307,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 21                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
+; cycloneiii_ff         ; 18                          ;
+;     CLR               ; 5                           ;
+;     ENA CLR           ; 12                          ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 39                          ;
+;     arith             ; 8                           ;
+;         2 data inputs ; 8                           ;
+;     normal            ; 31                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 20                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.28                        ;
 +-----------------------+-----------------------------+
 
 
@@ -315,61 +340,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 24 16:29:11 2023
+    Info: Processing started: Sat Nov 25 19:39:06 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lot -c Lot
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lot.v
     Info (12023): Found entity 1: Lot File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 1
 Info (12127): Elaborating entity "Lot" for the top level hierarchy
-Warning (10240): Verilog HDL Always Construct warning at Lot.v(28): inferring latch(es) for variable "premio", which holds its previous value in one or more paths through the always construct File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Warning (10240): Verilog HDL Always Construct warning at Lot.v(28): inferring latch(es) for variable "p1", which holds its previous value in one or more paths through the always construct File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Warning (10240): Verilog HDL Always Construct warning at Lot.v(28): inferring latch(es) for variable "p2", which holds its previous value in one or more paths through the always construct File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Info (10041): Inferred latch for "p2[4]" at Lot.v(28) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Info (10041): Inferred latch for "p2[3]" at Lot.v(28) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Info (10041): Inferred latch for "p2[2]" at Lot.v(28) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Info (10041): Inferred latch for "p2[1]" at Lot.v(28) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Info (10041): Inferred latch for "p2[0]" at Lot.v(28) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Info (10041): Inferred latch for "p1[4]" at Lot.v(28) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Info (10041): Inferred latch for "p1[3]" at Lot.v(28) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Info (10041): Inferred latch for "p1[2]" at Lot.v(28) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Info (10041): Inferred latch for "p1[1]" at Lot.v(28) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Info (10041): Inferred latch for "p1[0]" at Lot.v(28) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Info (10041): Inferred latch for "premio[1]" at Lot.v(28) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Info (10041): Inferred latch for "premio[0]" at Lot.v(28) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "premio[1]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-    Warning (13410): Pin "premio[0]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-    Warning (13410): Pin "p1[4]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-    Warning (13410): Pin "p1[3]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-    Warning (13410): Pin "p1[2]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-    Warning (13410): Pin "p1[1]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-    Warning (13410): Pin "p1[0]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-    Warning (13410): Pin "p2[4]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-    Warning (13410): Pin "p2[3]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-    Warning (13410): Pin "p2[2]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-    Warning (13410): Pin "p2[1]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-    Warning (13410): Pin "p2[0]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 28
-Info (17049): 5 registers lost all their fanouts during netlist optimizations.
+Warning (10230): Verilog HDL assignment warning at Lot.v(59): truncated value with size 32 to match size of target (5) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 59
+Warning (10230): Verilog HDL assignment warning at Lot.v(67): truncated value with size 32 to match size of target (5) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 67
+Warning (10230): Verilog HDL assignment warning at Lot.v(75): truncated value with size 32 to match size of target (5) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 75
+Warning (10230): Verilog HDL assignment warning at Lot.v(78): truncated value with size 32 to match size of target (5) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 78
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 6 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/output_files/Lot.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 9 input pin(s) that do not drive logic
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "fim" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 2
-    Warning (15610): No output dependent on input pin "num[3]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 3
-    Warning (15610): No output dependent on input pin "num[2]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 3
-    Warning (15610): No output dependent on input pin "num[1]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 3
-    Warning (15610): No output dependent on input pin "num[0]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 3
-    Warning (15610): No output dependent on input pin "insere" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 2
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 2
-    Warning (15610): No output dependent on input pin "reset" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 2
-    Warning (15610): No output dependent on input pin "fim_jogo" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 2
-Info (21057): Implemented 21 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 60 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 12 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
-    Info: Peak virtual memory: 4731 megabytes
-    Info: Processing ended: Fri Nov 24 16:29:26 2023
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:29
+    Info (21061): Implemented 39 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4739 megabytes
+    Info: Processing ended: Sat Nov 25 19:39:20 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:30
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/output_files/Lot.map.smsg.
 
 
