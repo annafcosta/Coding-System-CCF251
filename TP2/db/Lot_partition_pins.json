@@ -56,11 +56,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "fim_jogo",
 					"strict" : false
 				},
 				{
-					"name" : "fim_jogo",
+					"name" : "reset",
 					"strict" : false
 				},
 				{
@@ -80,11 +80,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "insere",
 					"strict" : false
 				},
 				{
-					"name" : "insere",
+					"name" : "clk",
 					"strict" : false
 				}
 			]

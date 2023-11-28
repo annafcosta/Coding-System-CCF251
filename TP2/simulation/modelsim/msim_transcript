@@ -1,4 +1,5 @@
 # Reading pref.tcl
+# ERROR: No extended dataflow license exists
 # do Lot_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -12,83 +13,53 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:38:49 on Nov 27,2023
+# Start time: 19:37:41 on Nov 28,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v 
 # -- Compiling module Lot
 # 
 # Top level modules:
 # 	Lot
-# End time: 23:38:49 on Nov 27,2023, Elapsed time: 0:00:00
+# End time: 19:37:41 on Nov 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.Lot
-# vsim work.Lot 
-# Start time: 23:38:57 on Nov 27,2023
+# vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:37:41 on Nov 28,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v 
+# -- Compiling module lot_tb
+# 
+# Top level modules:
+# 	lot_tb
+# End time: 19:37:41 on Nov 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  lot_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" lot_tb 
+# Start time: 19:37:41 on Nov 28,2023
+# Loading work.lot_tb
 # Loading work.Lot
-add wave -position insertpoint  \
-sim:/Lot/c \
-sim:/Lot/clk \
-sim:/Lot/fim \
-sim:/Lot/fim_jogo \
-sim:/Lot/insere \
-sim:/Lot/num \
-sim:/Lot/p1 \
-sim:/Lot/p2 \
-sim:/Lot/premio \
-sim:/Lot/reset \
-sim:/Lot/state
-force -freeze sim:/Lot/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/Lot/insere 1 0
-force -freeze sim:/Lot/num 0100 0
-run
-force -freeze sim:/Lot/num 0111 0
-run
-force -freeze sim:/Lot/num 0000 0
-run
-force -freeze sim:/Lot/num 0001 0
-run
-force -freeze sim:/Lot/num 0000 0
-run
-force -freeze sim:/Lot/insere 0 0
-force -freeze sim:/Lot/fim 1 0
-run
-force -freeze sim:/Lot/fim_jogo 1 0
-force -freeze sim:/Lot/fim 0 0
-run
-force -freeze sim:/Lot/fim_jogo 0 0
-force -freeze sim:/Lot/insere 1 0
-force -freeze sim:/Lot/num 1000 0
-run
-force -freeze sim:/Lot/num 1001 0
-run
-force -freeze sim:/Lot/num 0000 0
-run
-force -freeze sim:/Lot/num 0010 0
-run
-force -freeze sim:/Lot/num 0000 0
-run
-run
-force -freeze sim:/Lot/fim 1 0
-force -freeze sim:/Lot/insere 0 0
-force -freeze sim:/Lot/fim_jogo 1 0
-run
-force -freeze sim:/Lot/fim_jogo 0 0
-force -freeze sim:/Lot/fim 0 0
-force -freeze sim:/Lot/insere 1 0
-force -freeze sim:/Lot/num 1000 0
-run
-force -freeze sim:/Lot/num 0010 0
-run
-force -freeze sim:/Lot/num 0000 0
-run
-force -freeze sim:/Lot/num 0001 0
-run
-force -freeze sim:/Lot/num 1001 0
-run
-force -freeze sim:/Lot/fim 1 0
-run
-force -freeze sim:/Lot/fim 0 0
-force -freeze sim:/Lot/fim_jogo 1 0
-run
-# End time: 23:47:45 on Nov 27,2023, Elapsed time: 0:08:48
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Numero =  4
+# Numero =  7
+# Numero =  0
+# Numero =  1
+# Numero =  9
+# Premio sorteado = 0. Quantidade de premio 1 :  0, Quantidade de premio 2:  0
+# Numero =  8
+# Numero =  9
+# Numero =  0
+# Numero =  2
+# Numero =  0
+# Premio sorteado = 0. Quantidade de premio 1 :  0, Quantidade de premio 2:  0
+# ** Note: $finish    : C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v(79)
+#    Time: 18 ns  Iteration: 0  Instance: /lot_tb
+# 1
+# Break in Module lot_tb at C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v line 79
+# End time: 19:38:30 on Nov 28,2023, Elapsed time: 0:00:49
 # Errors: 0, Warnings: 0
