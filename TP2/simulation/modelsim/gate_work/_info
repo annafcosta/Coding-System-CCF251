@@ -10,51 +10,51 @@ z2
 cModel Technology
 Z0 dC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/simulation/modelsim
 vhard_block
-!s110 1700795419
+Z1 !s110 1701122723
 !i10b 1
-!s100 Q:@?F0RKFS5CgHOni5@S[3
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I1_``[R8UmkG_fI5DLd4Oj2
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s100 =^<0[c4oO9IiB8nSFVHd]1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I@[3E:>2R`K0C]8Bf]2;<S0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1700795385
-Z4 8Lot.vo
-Z5 FLot.vo
+Z4 w1701122411
+Z5 8Lot.vo
+Z6 FLot.vo
 !i122 0
-L0 387 34
-Z6 OV;L;2020.1;71
+L0 1723 34
+Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1700795418.000000
+Z8 !s108 1701122723.000000
 !s107 Lot.vo|
-Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Lot.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Lot.vo|
 !i113 1
-Z9 o-vlog01compat -work work
-Z10 !s92 -vlog01compat -work work +incdir+.
-Z11 tCvgOpt 0
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
 vLot
-!s110 1700795418
-!i10b 1
-!s100 0TEgo7:gPQ:O<bWPLjUI<1
 R1
-IGYQHaHaRmJ3FZPhnNRO3c0
+!i10b 1
+!s100 G:[]C_17>;<CCkNk:TWf;0
 R2
-R0
+ImO<^Q_l]OnTDmRPD>m[:T2
 R3
+R0
 R4
 R5
-!i122 0
-L0 32 354
 R6
+!i122 0
+L0 32 1690
+R7
 r1
 !s85 0
 31
-R7
-Z12 !s107 Lot.vo|
 R8
-!i113 1
+Z13 !s107 Lot.vo|
 R9
+!i113 1
 R10
 R11
+R12
 n@lot

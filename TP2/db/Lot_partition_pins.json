@@ -52,6 +52,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "fim",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "fim_jogo",
+					"strict" : false
+				},
+				{
 					"name" : "num[3]",
 					"strict" : false
 				},
@@ -68,19 +80,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "insere",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "reset",
-					"strict" : false
-				},
-				{
-					"name" : "fim_jogo",
+					"name" : "insere",
 					"strict" : false
 				}
 			]

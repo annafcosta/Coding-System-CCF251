@@ -12,21 +12,21 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:31:12 on Nov 25,2023
+# Start time: 23:38:49 on Nov 27,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v 
 # -- Compiling module Lot
 # 
 # Top level modules:
 # 	Lot
-# End time: 19:31:13 on Nov 25,2023, Elapsed time: 0:00:01
+# End time: 23:38:49 on Nov 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.Lot
 # vsim work.Lot 
-# Start time: 19:31:26 on Nov 25,2023
+# Start time: 23:38:57 on Nov 27,2023
 # Loading work.Lot
 add wave -position insertpoint  \
-sim:/Lot/astate \
+sim:/Lot/c \
 sim:/Lot/clk \
 sim:/Lot/fim \
 sim:/Lot/fim_jogo \
@@ -38,7 +38,6 @@ sim:/Lot/premio \
 sim:/Lot/reset \
 sim:/Lot/state
 force -freeze sim:/Lot/clk 1 0, 0 {50 ps} -r 100
-run
 force -freeze sim:/Lot/insere 1 0
 force -freeze sim:/Lot/num 0100 0
 run
@@ -46,39 +45,50 @@ force -freeze sim:/Lot/num 0111 0
 run
 force -freeze sim:/Lot/num 0000 0
 run
-force -freeze sim:/Lot/num 0100 0
+force -freeze sim:/Lot/num 0001 0
 run
-force -freeze sim:/Lot/num 1001 0
+force -freeze sim:/Lot/num 0000 0
 run
 force -freeze sim:/Lot/insere 0 0
-run
-run
-run
-run
-run
+force -freeze sim:/Lot/fim 1 0
 run
 force -freeze sim:/Lot/fim_jogo 1 0
+force -freeze sim:/Lot/fim 0 0
 run
 force -freeze sim:/Lot/fim_jogo 0 0
 force -freeze sim:/Lot/insere 1 0
-force -freeze sim:/Lot/num 0100 0
-run
-force -freeze sim:/Lot/num 0111 0
-run
-force -freeze sim:/Lot/num 0001 0
-run
-force -freeze sim:/Lot/insere 0 0
-run
-run
-run
-run
-run
+force -freeze sim:/Lot/num 1000 0
 run
 force -freeze sim:/Lot/num 1001 0
 run
-force -freeze sim:/Lot/insere 1 0
+force -freeze sim:/Lot/num 0000 0
 run
+force -freeze sim:/Lot/num 0010 0
+run
+force -freeze sim:/Lot/num 0000 0
+run
+run
+force -freeze sim:/Lot/fim 1 0
 force -freeze sim:/Lot/insere 0 0
+force -freeze sim:/Lot/fim_jogo 1 0
 run
-# End time: 19:38:27 on Nov 25,2023, Elapsed time: 0:07:01
+force -freeze sim:/Lot/fim_jogo 0 0
+force -freeze sim:/Lot/fim 0 0
+force -freeze sim:/Lot/insere 1 0
+force -freeze sim:/Lot/num 1000 0
+run
+force -freeze sim:/Lot/num 0010 0
+run
+force -freeze sim:/Lot/num 0000 0
+run
+force -freeze sim:/Lot/num 0001 0
+run
+force -freeze sim:/Lot/num 1001 0
+run
+force -freeze sim:/Lot/fim 1 0
+run
+force -freeze sim:/Lot/fim 0 0
+force -freeze sim:/Lot/fim_jogo 1 0
+run
+# End time: 23:47:45 on Nov 27,2023, Elapsed time: 0:08:48
 # Errors: 0, Warnings: 0

@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 dC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/simulation/modelsim
 vLot
-!s110 1700951473
+!s110 1701139129
 !i10b 1
-!s100 ggZj9X83M4Q<h=:i`?Ez:3
+!s100 G[3G[7OJf_Ml5NiJM8ahG2
 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I2WX9WcRC><k6ThIjXR>iY3
+I5EkJCFhW?A<i^1<<n^S8z1
 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1700951381
+w1701138962
 8C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v
 FC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v
 !i122 0
-L0 1 92
+L0 1 137
 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1700951472.000000
+!s108 1701139129.000000
 !s107 C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2|C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v|
 !i113 1

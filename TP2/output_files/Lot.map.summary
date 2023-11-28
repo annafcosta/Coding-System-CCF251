@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sat Nov 25 19:39:20 2023
+Analysis & Synthesis Status : Successful - Mon Nov 27 23:36:16 2023
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Lot
 Top-level Entity Name : Lot
 Family : Cyclone IV E
-Total logic elements : 39
-    Total combinational functions : 39
-    Dedicated logic registers : 18
-Total registers : 18
+Total logic elements : 68
+    Total combinational functions : 66
+    Dedicated logic registers : 12
+Total registers : 12
 Total pins : 21
 Total virtual pins : 0
 Total memory bits : 0
