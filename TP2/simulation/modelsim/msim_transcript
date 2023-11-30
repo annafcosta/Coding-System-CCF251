@@ -128,3 +128,17 @@ run
 run
 run
 run
+force -freeze sim:/Top/fim_jogo 0 0
+force -freeze sim:/Top/num 0100 0
+run
+force -freeze sim:/Top/num 0000 0
+run
+run
+force -freeze sim:/Top/num 0010 0
+run
+force -freeze sim:/Top/num 1001 0
+run
+force -freeze sim:/Top/fim 1 0
+run
+# End time: 01:08:16 on Nov 30,2023, Elapsed time: 0:20:04
+# Errors: 1, Warnings: 2

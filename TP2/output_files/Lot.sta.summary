@@ -3,135 +3,159 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'fim'
-Slack : -12.258
-TNS   : -64.847
-
-Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -9.757
-TNS   : -77.429
+Slack : -15.232
+TNS   : -157.014
 
 Type  : Slow 1200mV 85C Model Setup 'Lot:lt|premio[0]'
-Slack : -9.115
-TNS   : -17.890
+Slack : -12.050
+TNS   : -192.394
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -9.995
+TNS   : -78.135
 
 Type  : Slow 1200mV 85C Model Hold 'fim'
-Slack : -5.065
-TNS   : -9.836
+Slack : -3.527
+TNS   : -25.155
 
 Type  : Slow 1200mV 85C Model Hold 'Lot:lt|premio[0]'
-Slack : 0.318
+Slack : 0.227
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.401
+Slack : 0.294
 TNS   : 0.000
 
+Type  : Slow 1200mV 85C Model Recovery 'Lot:lt|premio[0]'
+Slack : -9.861
+TNS   : -19.627
+
 Type  : Slow 1200mV 85C Model Recovery 'clk'
-Slack : -1.581
-TNS   : -5.856
+Slack : -1.591
+TNS   : -6.199
+
+Type  : Slow 1200mV 85C Model Removal 'Lot:lt|premio[0]'
+Slack : 0.324
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'clk'
-Slack : 1.455
+Slack : 1.388
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fim'
-Slack : -7.758
-TNS   : -251.591
+Slack : -7.010
+TNS   : -775.035
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -13.280
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Lot:lt|premio[0]'
-Slack : 0.474
+Slack : 0.415
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'fim'
-Slack : -11.338
-TNS   : -59.968
-
-Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -9.030
-TNS   : -71.374
+Slack : -14.174
+TNS   : -145.227
 
 Type  : Slow 1200mV 0C Model Setup 'Lot:lt|premio[0]'
-Slack : -8.435
-TNS   : -16.536
+Slack : -11.115
+TNS   : -176.819
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -9.176
+TNS   : -71.620
 
 Type  : Slow 1200mV 0C Model Hold 'fim'
-Slack : -4.705
-TNS   : -9.157
+Slack : -3.286
+TNS   : -23.654
 
 Type  : Slow 1200mV 0C Model Hold 'Lot:lt|premio[0]'
-Slack : 0.310
+Slack : 0.227
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.353
+Slack : 0.271
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Recovery 'Lot:lt|premio[0]'
+Slack : -9.147
+TNS   : -18.211
+
 Type  : Slow 1200mV 0C Model Recovery 'clk'
-Slack : -1.329
-TNS   : -4.891
+Slack : -1.338
+TNS   : -5.206
+
+Type  : Slow 1200mV 0C Model Removal 'Lot:lt|premio[0]'
+Slack : 0.389
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'clk'
-Slack : 1.407
+Slack : 1.370
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fim'
-Slack : -7.068
-TNS   : -229.713
+Slack : -6.407
+TNS   : -707.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -13.280
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Lot:lt|premio[0]'
-Slack : 0.427
+Slack : 0.361
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'fim'
-Slack : -5.516
-TNS   : -28.498
-
-Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -4.753
-TNS   : -37.486
+Slack : -6.951
+TNS   : -71.766
 
 Type  : Fast 1200mV 0C Model Setup 'Lot:lt|premio[0]'
-Slack : -3.982
-TNS   : -7.787
+Slack : -6.058
+TNS   : -92.711
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -4.743
+TNS   : -37.157
 
 Type  : Fast 1200mV 0C Model Hold 'fim'
-Slack : -2.345
-TNS   : -4.617
-
-Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.180
-TNS   : 0.000
+Slack : -1.705
+TNS   : -13.015
 
 Type  : Fast 1200mV 0C Model Hold 'Lot:lt|premio[0]'
-Slack : 0.213
+Slack : 0.172
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Lot:lt|premio[0]'
+Slack : -4.532
+TNS   : -9.008
+
 Type  : Fast 1200mV 0C Model Recovery 'clk'
-Slack : -0.862
-TNS   : -3.164
+Slack : -0.872
+TNS   : -3.384
+
+Type  : Fast 1200mV 0C Model Removal 'Lot:lt|premio[0]'
+Slack : 0.261
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'clk'
-Slack : 0.495
+Slack : 0.388
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fim'
-Slack : -3.882
-TNS   : -111.902
+Slack : -3.645
+TNS   : -341.922
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -11.288
+TNS   : -11.244
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Lot:lt|premio[0]'
-Slack : 0.364
+Slack : 0.319
 TNS   : 0.000
 
 ------------------------------------------------------------

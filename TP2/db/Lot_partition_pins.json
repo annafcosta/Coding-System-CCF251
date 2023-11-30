@@ -4,6 +4,118 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "hex7[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex7[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex7[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex7[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex7[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex7[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex7[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex6[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex6[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex6[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex6[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex6[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex6[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex6[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4[0]",
+					"strict" : false
+				},
+				{
 					"name" : "ledp1[1]",
 					"strict" : false
 				},
@@ -28,6 +140,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "fim_jogo",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "num[3]",
+					"strict" : false
+				},
+				{
 					"name" : "num[0]",
 					"strict" : false
 				},
@@ -40,23 +164,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "num[3]",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
 					"strict" : false
 				},
 				{
 					"name" : "insere",
-					"strict" : false
-				},
-				{
-					"name" : "reset",
-					"strict" : false
-				},
-				{
-					"name" : "fim_jogo",
 					"strict" : false
 				}
 			]
