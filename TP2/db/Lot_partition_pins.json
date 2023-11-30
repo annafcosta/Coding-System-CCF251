@@ -4,67 +4,27 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "premio[1]",
+					"name" : "ledp1[1]",
 					"strict" : false
 				},
 				{
-					"name" : "premio[0]",
+					"name" : "ledp1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "p1[4]",
+					"name" : "ledp2[1]",
 					"strict" : false
 				},
 				{
-					"name" : "p1[3]",
+					"name" : "ledp2[0]",
 					"strict" : false
 				},
 				{
-					"name" : "p1[2]",
-					"strict" : false
-				},
-				{
-					"name" : "p1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "p1[0]",
-					"strict" : false
-				},
-				{
-					"name" : "p2[4]",
-					"strict" : false
-				},
-				{
-					"name" : "p2[3]",
-					"strict" : false
-				},
-				{
-					"name" : "p2[2]",
-					"strict" : false
-				},
-				{
-					"name" : "p2[1]",
-					"strict" : false
-				},
-				{
-					"name" : "p2[0]",
+					"name" : "led15",
 					"strict" : false
 				},
 				{
 					"name" : "fim",
-					"strict" : false
-				},
-				{
-					"name" : "fim_jogo",
-					"strict" : false
-				},
-				{
-					"name" : "reset",
-					"strict" : false
-				},
-				{
-					"name" : "num[3]",
 					"strict" : false
 				},
 				{
@@ -80,11 +40,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "insere",
+					"name" : "num[3]",
 					"strict" : false
 				},
 				{
 					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "insere",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "fim_jogo",
 					"strict" : false
 				}
 			]

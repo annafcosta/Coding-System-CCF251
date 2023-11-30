@@ -1,0 +1,16 @@
+module Top (
+    clk, num, reset, fim,  fim_jogo, insere, premio, p1, p2, hex0, hex1, hex2, led
+);
+   input wire; clk, reset, fim, insere, fim_jogo;
+   input wire;  [0:3] num;
+   output wire; [0:1] premio;
+   output wire; [0:4] p1, p2;
+   output wire; [0:3] state;
+   
+
+
+   Lot lt(.clk(clk), .num(num), .reset(reset), .fim(fim), .fim_jogo(fim_jogo).insere(insere), .premio(premio), . p1(p1), .p2(p2));
+   Display ds(.hex0(hex0), .hex1(hex1), .hex2(hex2), .led(led), .premio_f(premio), .p1_f(p1), .p2_f(p2), .state_f(state));
+
+endmodule
+

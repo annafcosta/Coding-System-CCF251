@@ -1,4 +1,4 @@
-`timescale 1ns/1ps
+/*`timescale 1ns/1ps
 module lot_tb;
   reg clk_tb, reset_tb, fim_tb, fim_jogo_tb, insere_tb;
   reg [0:3] num_tb;
@@ -81,3 +81,4 @@ module lot_tb;
   end
   always #1 clk_tb = ~clk_tb;
 endmodule
+*/

@@ -1,10 +1,9 @@
-module Lot(clk, num, reset, fim, fim_jogo, insere, premio, p1, p2);
+module Lot(clk, num, reset, fim, fim_jogo, insere, premio, p1, p2, state);
   input  clk, reset, fim, insere, fim_jogo; 
   input  [0:3] num;
   output reg [0:1] premio;
   output reg [0:4] p1, p2;
-  
-  reg [3:0] state; // registrador de estados
+  output reg [0:3] state; // registrador de estados ps; mudei aqui
   reg [3:0] c;   // registrador de consecutivos
   
   // num da loteria: 47019
@@ -31,7 +30,7 @@ module Lot(clk, num, reset, fim, fim_jogo, insere, premio, p1, p2);
     premio = 2'b00;
     p1 = 5'b00000;
     p2 = 5'b00000;
-	c = 4'b0000;
+	 c = 4'b0000;
   end 
   
   always @(posedge clk , posedge reset , posedge fim_jogo , posedge fim) begin
@@ -61,6 +60,10 @@ module Lot(clk, num, reset, fim, fim_jogo, insere, premio, p1, p2);
                 premio = 2'b00;
 					 state <= sgx;
             end
+				sgx: begin
+					premio <= premio;
+					state <= state;
+				end
 			default: begin
 				premio = 2'b00;
 				state <= state;
@@ -72,28 +75,35 @@ module Lot(clk, num, reset, fim, fim_jogo, insere, premio, p1, p2);
                     if(num == 4'b0100)begin
                         c <= c+1;
                         state <= s1;
-                    end else if(num != 4'b0100)begin
+                    end else if(num != 4'b0100 && num < 4'b1010)begin
                         c <= 0;
                         state <= s1;
-                    end
+                    end else if(num > 4'b1001)begin
+								state <= sgx;
+					end
+						  
                 end
                 s1: begin
                     if(num == 4'b0111)begin
                         c <= c+1;
                         state <= s2;
-                    end else if (num != 4'b0111) begin
+                    end else if (num != 4'b0111 && num < 4'b1010) begin
                         c <= 0;
                         state <= s2;                       
-                    end
+                    end else if(num > 4'b1001)begin
+								state <= sgx;
+					end
                 end
                 s2: begin
                     if(num == 4'b0000)begin
                         c <= c+1;
                         state <= s3;
-                    end else if(num != 4'b0000)begin
+                    end else if(num != 4'b0000 && num < 4'b1010)begin
                         if (c >= 2) begin // caso o numero de consecutivo foi maior ou igual a 2, a pessoa tem a chance com o digito 5, por isso mesmo que erre, o contador nao pode zerar;
                             state <= s3;
-                        end else begin
+                        end else if(num > 4'b1001 )begin
+									state <= sgx;
+					    end else begin
                             c <= 0;
                             state <= s3;
                         end
@@ -108,10 +118,12 @@ module Lot(clk, num, reset, fim, fim_jogo, insere, premio, p1, p2);
                             c <= c +1;
                             state <= s4;  
                         end
-                    end else if(num != 4'b0000)begin
+                    end else if(num != 4'b0000 && num < 4'b1010)begin
                         if (c >= 2) begin
                             state <= s4;
-                        end else begin
+                        end else if(num > 4'b1001)begin
+									 state <= sgx;
+					    end else begin
                             c <= 0;
                             state <= s4;
                         end
