@@ -1,9 +1,9 @@
 module Lot(clk, num, reset, fim, fim_jogo, insere, premio, p1, p2, state);
   input  clk, reset, fim, insere, fim_jogo; 
-  input  [0:3] num;
-  output reg [0:1] premio;
-  output reg [0:4] p1, p2;
-  output reg [0:3] state; // registrador de estados ps; mudei aqui
+  input  [3:0] num;
+  output reg [1:0] premio;
+  output reg [4:0] p1, p2;
+  output reg [3:0] state; // registrador de estados ps; mudei aqui
   reg [3:0] c;   // registrador de consecutivos
   
   // num da loteria: 47019
@@ -154,3 +154,4 @@ module Lot(clk, num, reset, fim, fim_jogo, insere, premio, p1, p2, state);
      end  
   end
 endmodule
+

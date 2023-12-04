@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 dC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/simulation/modelsim
 vDisplay
-Z1 !s110 1701649565
+Z1 !s110 1701711953
 !i10b 1
-!s100 CX1E55mL]UIo;e6S1NW?D2
+!s100 nR0SYMHh=Hn<hmjJ<dchU1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IHAW_[gM]XFEch?d>mWnUG0
+I=B?kdX70[a31@9=JcSNZW3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1701648084
+w1701708953
 8C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v
 FC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v
 !i122 1
-L0 1 151
+L0 1 175
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1701649564.000000
+Z5 !s108 1701711952.000000
 !s107 C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2|C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v|
 !i113 1
@@ -35,14 +35,14 @@ Z7 !s92 -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-
 Z8 tCvgOpt 0
 n@display
 vLot
-!s110 1701649564
+!s110 1701711952
 !i10b 1
-!s100 oTQzUei<K2I<Xkh4hIic]0
+!s100 lNo>47[2hB0lziC8^MS^l0
 R2
-Idh1Y34IUQ:S2^]71NW1mz1
+IE_FKJG=XNLj]C4>F^Hk]<0
 R3
 R0
-w1701300475
+w1701711636
 8C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v
 FC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v
 !i122 0
@@ -62,21 +62,21 @@ n@lot
 vlot_tb
 R1
 !i10b 1
-!s100 =_M4>ml>[EkmdZ<M6zl661
+!s100 Ii2C^IOL3V0]eE^X_LH[23
 R2
-IBYASKb^`b1n_KnBP>V7R[1
+IA]`HPX2KBokK2OA6PgBAC3
 R3
 R0
-w1701649476
+w1701711805
 8C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v
 FC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v
 !i122 3
-L0 3 157
+L0 3 161
 R4
 r1
 !s85 0
 31
-Z9 !s108 1701649565.000000
+Z9 !s108 1701711953.000000
 !s107 C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2|C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v|
 !i113 1
@@ -86,16 +86,16 @@ R8
 vTop
 R1
 !i10b 1
-!s100 Cj7[:zO41>NP[j=T1:1f:1
+!s100 VMSlB^zVSaLhzFZSkZWoh2
 R2
-IeKk3j2F0FF:fYH79LPPnI2
+IJ1XXF^mbP9^fd52I<FVXz3
 R3
 R0
-w1701452263
+w1701711635
 8C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v
 FC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v
 !i122 2
-L0 1 18
+L0 1 28
 R4
 r1
 !s85 0

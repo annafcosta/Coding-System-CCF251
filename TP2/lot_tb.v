@@ -2,12 +2,14 @@
 
 module lot_tb;
 
-  reg clk, reset, fim, insere, fim_jogo;
-  reg [0:3] num;
-  wire [0:6] hex7, hex6, hex5, hex4;
+  reg clk,reset, fim, insere, fim_jogo;
+  reg [3:0] num;
+  wire [0:6] hex1, hex0, hex2, hex3;
   wire [0:1] ledp1, ledp2;
   wire led15;
-  wire [0:3] state, sled;
+  wire [3:0] state, sled,gled;
+  
+  
   
   // Instanciação do módulo Top
   Top uut (
@@ -17,15 +19,16 @@ module lot_tb;
     .fim(fim),
     .fim_jogo(fim_jogo),
     .insere(insere),
-    .hex7(hex7),
-    .hex6(hex6),
-    .hex5(hex5),
-    .hex4(hex4),
+    .hex1(hex1),
+    .hex0(hex0),
+    .hex2(hex2),
+    .hex3(hex3),
     .ledp1(ledp1),
     .ledp2(ledp2),
     .led15(led15),
     .state(state),
-    .sled(sled)
+    .sled(sled),
+	 .gled(gled)
   );
 
   // Geração de clock sincronizada com insere
@@ -151,6 +154,7 @@ module lot_tb;
     fim = 0;
     fim_jogo = 1;
     #10
+	 reset = 1;
 
     $stop;
   end

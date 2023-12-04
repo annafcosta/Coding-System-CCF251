@@ -12,74 +12,72 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:26:04 on Dec 03,2023
+# Start time: 14:45:52 on Dec 04,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v 
 # -- Compiling module Lot
 # 
 # Top level modules:
 # 	Lot
-# End time: 21:26:04 on Dec 03,2023, Elapsed time: 0:00:00
+# End time: 14:45:52 on Dec 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:26:04 on Dec 03,2023
+# Start time: 14:45:52 on Dec 04,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v 
 # -- Compiling module Display
 # 
 # Top level modules:
 # 	Display
-# End time: 21:26:05 on Dec 03,2023, Elapsed time: 0:00:01
+# End time: 14:45:53 on Dec 04,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:26:05 on Dec 03,2023
+# Start time: 14:45:53 on Dec 04,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v 
 # -- Compiling module Top
 # 
 # Top level modules:
 # 	Top
-# End time: 21:26:05 on Dec 03,2023, Elapsed time: 0:00:00
+# End time: 14:45:53 on Dec 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:26:05 on Dec 03,2023
+# Start time: 14:45:53 on Dec 04,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v 
 # -- Compiling module lot_tb
 # 
 # Top level modules:
 # 	lot_tb
-# End time: 21:26:05 on Dec 03,2023, Elapsed time: 0:00:00
+# End time: 14:45:53 on Dec 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  lot_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" lot_tb 
-# Start time: 21:26:05 on Dec 03,2023
+# Start time: 14:45:53 on Dec 04,2023
 # Loading work.lot_tb
 # Loading work.Top
 # Loading work.Lot
 # Loading work.Display
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 16, found 15.
-#    Time: 0 ps  Iteration: 0  Instance: /lot_tb/uut File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v Line: 13
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ds'.  Expected 13, found 12.
-#    Time: 0 ps  Iteration: 0  Instance: /lot_tb/uut/ds File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v Line: 16
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'sled'. The port definition is at: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v(9).
-#    Time: 0 ps  Iteration: 0  Instance: /lot_tb/uut/ds File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v Line: 16
-# ** Warning: (vsim-3722) C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v(16): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'sled'. The port definition is at: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /lot_tb/uut File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ds'.  Expected 15, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /lot_tb/uut/ds File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v Line: 21
+# ** Warning: (vsim-3722) C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v(21): [TFMPC] - Missing connection for port 'clk'.
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: gabri  Hostname: NOTEBOOK-WIN  ProcessID: 6372
-#           Attempting to use alternate WLF file "./wlft4gy12n".
+#           Attempting to use alternate WLF file "./wlft9r23i5".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft4gy12n
+#           Using alternate file: ./wlft9r23i5
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v(155)
+# ** Note: $stop    : C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v(159)
 #    Time: 450 ns  Iteration: 0  Instance: /lot_tb
-# Break in Module lot_tb at C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v line 155
-# End time: 21:28:30 on Dec 03,2023, Elapsed time: 0:02:25
-# Errors: 0, Warnings: 6
+# Break in Module lot_tb at C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v line 159
+# End time: 14:46:32 on Dec 04,2023, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 5

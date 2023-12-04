@@ -1,12 +1,13 @@
  module Display(
-    input wire clk,
-    input wire [0:1] premio_f,
-    input wire [0:4] p1_f, p2_f,
-    input wire [0:3] state_f,
-    output reg [0:6] hex7, hex6, hex5, hex4,
+    input wire clk, reset, 
+    input wire [1:0] premio_f,
+    input wire [4:0] p1_f, p2_f,
+    input wire [3:0] state_f,
+    output reg [0:6] hex1, hex0, hex2, hex3,
     output reg [0:1] ledp1, ledp2,
     output reg led15,
-    output reg sled
+    output reg sled,
+	 output reg [3:0] gled
 );
 
 	 
@@ -34,109 +35,130 @@
               sgx = 4'b1000; // estado de espera 
 	
 	initial begin
-        ledp1 = 0;
-        ledp2 = 0;
-        hex4 = traco;
-        hex5 = traco;
-        hex6 = traco;
-        hex7 = traco;
+        ledp1 = 2'b00;
+        ledp2 = 2'b00;
+        hex3 = traco;
+        hex2 = traco;
+        hex0 = traco;
+        hex1 = traco;
     end
+    
    
     always @(*) begin
+        if (reset == 1'b1) begin
+            ledp1 = 2'b00;
+            ledp2 = 2'b00;
+            hex3 = traco;
+            hex2 = traco;
+            hex0 = traco;
+            hex1 = traco;
+        end
         case (premio_f)
             2'b01:begin
+                ledp1 = 2'b11;
+                ledp2 = 2'b00;
                 case (p1_f)
+                    4'b0000:begin
+                        hex1 = zero;
+                        hex0 = zero;
+                    end
                     4'b0001:begin
-                        hex7 = zero;
-                        hex6 = um;
+                        hex1 = zero;
+                        hex0 = um;
                     end
                     4'b0010:begin
-                        hex7 = zero;
-                        hex6 = dois;
+                        hex1 = zero;
+                        hex0 = dois;
                     end
                     4'b0011:begin
-                        hex7 = zero;
-                        hex6 = tres;
+                        hex1 = zero;
+                        hex0 = tres;
                     end
                     4'b0100:begin
-                        hex7 = zero;
-                        hex6 = quatro;
+                        hex1 = zero;
+                        hex0 = quatro;
                     end
                     4'b0101:begin
-                        hex7 = zero;
-                        hex6 = cinco;
+                        hex1 = zero;
+                        hex0 = cinco;
                     end
                     4'b0110:begin
-                        hex7 = zero;
-                        hex6 = seis;
+                        hex1 = zero;
+                        hex0 = seis;
                     end
                     4'b0111:begin
-                        hex7 = zero;
-                        hex6 = sete;
+                        hex1 = zero;
+                        hex0 = sete;
                     end
                     4'b1000:begin
-                        hex7 = zero;
-                        hex6 = oito;
+                        hex1 = zero;
+                        hex0 = oito;
                     end
                     4'b1001:begin
-                        hex7 = zero;
-                        hex6 = nove;
+                        hex1 = zero;
+                        hex0 = nove;
                     end
 
-                    default: begin
-                        hex7 = traco;
-                        hex6 = traco;
-                    end
+       
                 endcase
             end
             2'b10: begin
+                ledp1 = 2'b00;
+                ledp2 = 2'b11;
                 case (p2_f)
+                    4'b0000:begin
+                        hex3 = zero;
+                        hex2 = zero;
+                        
+                    end
                     4'b0001: begin
-                        hex4 = zero;
-                        hex5 = um;
+                        hex3 = zero;
+                        hex2 = um;
                     end
                     4'b0010: begin
-                        hex4 = zero;
-                        hex5 = dois;
+                        hex3 = zero;
+                        hex2 = dois;
                     end
                     4'b0011: begin
-                        hex4 = zero;
-                        hex5 = tres;
+                        hex3 = zero;
+                        hex2 = tres;
                     end
                     4'b0100: begin
-                        hex4 = zero;
-                        hex5 = quatro;
+                        hex3 = zero;
+                        hex2 = quatro;
                     end
                     4'b0101: begin
-                        hex4 = zero;
-                        hex5 = cinco;
+                        hex3 = zero;
+                        hex2 = cinco;
                     end
                     4'b0110: begin
-                        hex4 = zero;
-                        hex5 = seis;
+                        hex3 = zero;
+                        hex2 = seis;
                     end
                     4'b0111: begin
-                        hex4 = zero;
-                        hex5 = sete;
+                        hex3 = zero;
+                        hex2 = sete;
                     end
                     4'b1000: begin
-                        hex4 = zero;
-                        hex5 = oito;
+                        hex3 = zero;
+                        hex2 = oito;
                     end
                     4'b1001: begin
-                        hex4 = zero;
-                        hex5 = nove;
+                        hex3 = zero;
+                        hex2 = nove;
                     end
-                    default: begin
-                        hex4 = traco;
-                        hex5 = traco;
-                    end
+                    
                 endcase
+            end
+            2'b00: begin
+                ledp1 = 2'b00;
+                ledp2 = 2'b00;
             end  
         endcase
     end
 	 
 	always @(state_f) begin
+			 gled <= state_f;
           if (state_f == s0) begin
             sled <= 1;
           end else begin
@@ -148,5 +170,7 @@
 				led15 <= 0;
 		  end
     end
+    
+	 
 endmodule
 
