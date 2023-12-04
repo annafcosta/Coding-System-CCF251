@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lot
-Thu Nov 30 11:32:09 2023
+Sun Dec 03 21:24:48 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -19,11 +19,10 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  11. Parameter Settings for User Entity Instance: Lot:lt
  12. Parameter Settings for User Entity Instance: Display:ds
  13. Port Connectivity Checks: "Display:ds"
- 14. Port Connectivity Checks: "Lot:lt"
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
- 18. Analysis & Synthesis Suppressed Messages
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+ 17. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -50,16 +49,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 30 11:32:09 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 03 21:24:48 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Lot                                         ;
 ; Top-level Entity Name              ; Top                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 119                                         ;
-;     Total combinational functions  ; 119                                         ;
+; Total logic elements               ; 138                                         ;
+;     Total combinational functions  ; 138                                         ;
 ;     Dedicated logic registers      ; 8                                           ;
 ; Total registers                    ; 8                                           ;
-; Total pins                         ; 42                                          ;
+; Total pins                         ; 50                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -186,30 +185,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------+
 ; Resource                                    ; Usage              ;
 +---------------------------------------------+--------------------+
-; Estimated Total logic elements              ; 119                ;
+; Estimated Total logic elements              ; 138                ;
 ;                                             ;                    ;
-; Total combinational functions               ; 119                ;
+; Total combinational functions               ; 138                ;
 ; Logic element usage by number of LUT inputs ;                    ;
-;     -- 4 input functions                    ; 63                 ;
-;     -- 3 input functions                    ; 35                 ;
-;     -- <=2 input functions                  ; 21                 ;
+;     -- 4 input functions                    ; 70                 ;
+;     -- 3 input functions                    ; 31                 ;
+;     -- <=2 input functions                  ; 37                 ;
 ;                                             ;                    ;
 ; Logic elements by mode                      ;                    ;
-;     -- normal mode                          ; 115                ;
-;     -- arithmetic mode                      ; 4                  ;
+;     -- normal mode                          ; 132                ;
+;     -- arithmetic mode                      ; 6                  ;
 ;                                             ;                    ;
 ; Total registers                             ; 8                  ;
 ;     -- Dedicated logic registers            ; 8                  ;
 ;     -- I/O registers                        ; 0                  ;
 ;                                             ;                    ;
-; I/O pins                                    ; 42                 ;
+; I/O pins                                    ; 50                 ;
 ;                                             ;                    ;
 ; Embedded Multiplier 9-bit elements          ; 0                  ;
 ;                                             ;                    ;
-; Maximum fan-out node                        ; Lot:lt|state[3]~12 ;
+; Maximum fan-out node                        ; Lot:lt|state[3]~17 ;
 ; Maximum fan-out                             ; 19                 ;
-; Total fan-out                               ; 502                ;
-; Average fan-out                             ; 2.38               ;
+; Total fan-out                               ; 558                ;
+; Average fan-out                             ; 2.27               ;
 +---------------------------------------------+--------------------+
 
 
@@ -218,9 +217,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |Top                       ; 119 (0)             ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 42   ; 0            ; |Top                ; Top         ; work         ;
-;    |Display:ds|            ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Display:ds     ; Display     ; work         ;
-;    |Lot:lt|                ; 81 (81)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Lot:lt         ; Lot         ; work         ;
+; |Top                       ; 138 (0)             ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 50   ; 0            ; |Top                ; Top         ; work         ;
+;    |Display:ds|            ; 53 (53)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Display:ds     ; Display     ; work         ;
+;    |Lot:lt|                ; 85 (85)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|Lot:lt         ; Lot         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -258,21 +257,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Display:ds|hex4[2]                                  ; Display:ds|Equal1   ; yes                    ;
 ; Display:ds|hex4[1]                                  ; Display:ds|Equal1   ; yes                    ;
 ; Display:ds|hex4[0]                                  ; Display:ds|Equal1   ; yes                    ;
-; Display:ds|ledp1[1]                                 ; Display:ds|WideNor0 ; yes                    ;
-; Display:ds|ledp1[0]                                 ; Display:ds|WideNor0 ; yes                    ;
-; Display:ds|ledp2[1]                                 ; Display:ds|WideNor0 ; yes                    ;
-; Display:ds|ledp2[0]                                 ; Display:ds|WideNor0 ; yes                    ;
-; Lot:lt|p1[1]                                        ; Lot:lt|Decoder0     ; yes                    ;
+; Lot:lt|p1[0]                                        ; Lot:lt|Decoder0     ; yes                    ;
+; Lot:lt|p1[4]                                        ; Lot:lt|Decoder0     ; yes                    ;
 ; Lot:lt|p1[3]                                        ; Lot:lt|Decoder0     ; yes                    ;
 ; Lot:lt|p1[2]                                        ; Lot:lt|Decoder0     ; yes                    ;
+; Lot:lt|p1[1]                                        ; Lot:lt|Decoder0     ; yes                    ;
 ; Lot:lt|premio[0]                                    ; Lot:lt|premio[0]    ; yes                    ;
 ; Lot:lt|premio[1]                                    ; Lot:lt|premio[0]    ; yes                    ;
-; Lot:lt|p1[4]                                        ; Lot:lt|Decoder0     ; yes                    ;
-; Lot:lt|p2[1]                                        ; Lot:lt|Decoder0     ; yes                    ;
+; Lot:lt|p2[0]                                        ; Lot:lt|Decoder0     ; yes                    ;
+; Lot:lt|p2[4]                                        ; Lot:lt|Decoder0     ; yes                    ;
 ; Lot:lt|p2[3]                                        ; Lot:lt|Decoder0     ; yes                    ;
 ; Lot:lt|p2[2]                                        ; Lot:lt|Decoder0     ; yes                    ;
-; Lot:lt|p2[4]                                        ; Lot:lt|Decoder0     ; yes                    ;
-; Number of user-specified and inferred latches = 42  ;                     ;                        ;
+; Lot:lt|p2[1]                                        ; Lot:lt|Decoder0     ; yes                    ;
+; Number of user-specified and inferred latches = 40  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -336,28 +333,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; nove           ; 0000100 ; Unsigned Binary              ;
 ; traco          ; 1111110 ; Unsigned Binary              ;
 ; apagado        ; 0000000 ; Unsigned Binary              ;
+; s0             ; 0000    ; Unsigned Binary              ;
+; s1             ; 0001    ; Unsigned Binary              ;
+; s2             ; 0010    ; Unsigned Binary              ;
+; s3             ; 0011    ; Unsigned Binary              ;
+; s4             ; 0100    ; Unsigned Binary              ;
+; sg1            ; 0101    ; Unsigned Binary              ;
+; sg2            ; 0110    ; Unsigned Binary              ;
+; sg0            ; 0111    ; Unsigned Binary              ;
+; sgx            ; 1000    ; Unsigned Binary              ;
 +----------------+---------+------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Display:ds"                                                                                                                                                                     ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; p1_f ; Input ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; p2_f ; Input ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Lot:lt"                                                                              ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; p1[0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; p2[0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Display:ds"                                                                                                                                                               ;
++----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                                               ;
++----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; sled     ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (4 bits) it drives.  The 3 most-significant bit(s) in the port expression will be connected to GND. ;
+; sled[-1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                   ;
+; clk      ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.                          ;
++----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -365,22 +362,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 42                          ;
+; boundary_port         ; 50                          ;
 ; cycloneiii_ff         ; 8                           ;
 ;     CLR               ; 2                           ;
 ;     ENA CLR           ; 6                           ;
-; cycloneiii_lcell_comb ; 120                         ;
-;     arith             ; 4                           ;
-;         2 data inputs ; 2                           ;
+; cycloneiii_lcell_comb ; 139                         ;
+;     arith             ; 6                           ;
+;         2 data inputs ; 4                           ;
 ;         3 data inputs ; 2                           ;
-;     normal            ; 116                         ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 17                          ;
-;         3 data inputs ; 33                          ;
-;         4 data inputs ; 63                          ;
+;     normal            ; 133                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 31                          ;
+;         3 data inputs ; 29                          ;
+;         4 data inputs ; 70                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.44                        ;
+; Average LUT depth     ; 2.65                        ;
 +-----------------------+-----------------------------+
 
 
@@ -389,7 +387,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -399,15 +397,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 30 11:31:56 2023
+    Info: Processing started: Sun Dec 03 21:24:36 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lot -c Lot
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lot.v
     Info (12023): Found entity 1: Lot File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file lot_tb.v
+Info (12021): Found 1 design units, including 1 entities, in source file lot_tb.v
+    Info (12023): Found entity 1: lot_tb File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file display.v
     Info (12023): Found entity 1: Display File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 1
+Warning (10238): Verilog Module Declaration warning at Top.v(3): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "Top" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file top.v
     Info (12023): Found entity 1: Top File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v Line: 1
 Info (12127): Elaborating entity "Top" for the top level hierarchy
@@ -434,91 +434,85 @@ Info (10041): Inferred latch for "p1[0]" at Lot.v(36) File: C:/Users/gabri/Docum
 Info (10041): Inferred latch for "premio[1]" at Lot.v(43) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 43
 Info (10041): Inferred latch for "premio[0]" at Lot.v(43) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 43
 Info (12128): Elaborating entity "Display" for hierarchy "Display:ds" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v Line: 16
-Warning (10270): Verilog HDL Case Statement warning at Display.v(24): incomplete case statement has no default case item File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10264): Verilog HDL Case Statement information at Display.v(24): all case item expressions in this case statement are onehot File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Warning (10230): Verilog HDL assignment warning at Display.v(98): truncated value with size 4 to match size of target (1) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 98
-Warning (10230): Verilog HDL assignment warning at Display.v(103): truncated value with size 4 to match size of target (1) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 103
-Warning (10230): Verilog HDL assignment warning at Display.v(105): truncated value with size 4 to match size of target (1) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 105
-Warning (10240): Verilog HDL Always Construct warning at Display.v(24): inferring latch(es) for variable "ledp1", which holds its previous value in one or more paths through the always construct File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at Display.v(24): inferring latch(es) for variable "ledp2", which holds its previous value in one or more paths through the always construct File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at Display.v(24): inferring latch(es) for variable "hex7", which holds its previous value in one or more paths through the always construct File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at Display.v(24): inferring latch(es) for variable "hex6", which holds its previous value in one or more paths through the always construct File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at Display.v(24): inferring latch(es) for variable "hex5", which holds its previous value in one or more paths through the always construct File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at Display.v(24): inferring latch(es) for variable "hex4", which holds its previous value in one or more paths through the always construct File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex4[6]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex4[5]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex4[4]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex4[3]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex4[2]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex4[1]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex4[0]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex5[6]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex5[5]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex5[4]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex5[3]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex5[2]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex5[1]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex5[0]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex6[6]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex6[5]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex6[4]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex6[3]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex6[2]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex6[1]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex6[0]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex7[6]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex7[5]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex7[4]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex7[3]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex7[2]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex7[1]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "hex7[0]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "ledp2[1]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "ledp2[0]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "ledp1[1]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Info (10041): Inferred latch for "ledp1[0]" at Display.v(24) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
+Warning (10270): Verilog HDL Case Statement warning at Display.v(46): incomplete case statement has no default case item File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10264): Verilog HDL Case Statement information at Display.v(46): all case item expressions in this case statement are onehot File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Warning (10240): Verilog HDL Always Construct warning at Display.v(46): inferring latch(es) for variable "hex7", which holds its previous value in one or more paths through the always construct File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Warning (10240): Verilog HDL Always Construct warning at Display.v(46): inferring latch(es) for variable "hex6", which holds its previous value in one or more paths through the always construct File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Warning (10240): Verilog HDL Always Construct warning at Display.v(46): inferring latch(es) for variable "hex4", which holds its previous value in one or more paths through the always construct File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Warning (10240): Verilog HDL Always Construct warning at Display.v(46): inferring latch(es) for variable "hex5", which holds its previous value in one or more paths through the always construct File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Warning (10235): Verilog HDL Always Construct warning at Display.v(143): variable "sled" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 143
+Info (10041): Inferred latch for "hex5[6]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex5[5]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex5[4]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex5[3]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex5[2]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex5[1]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex5[0]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex4[6]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex4[5]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex4[4]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex4[3]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex4[2]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex4[1]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex4[0]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex6[6]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex6[5]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex6[4]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex6[3]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex6[2]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex6[1]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex6[0]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex7[6]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex7[5]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex7[4]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex7[3]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex7[2]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex7[1]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+Info (10041): Inferred latch for "hex7[0]" at Display.v(46) File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "Display:ds|hex7[0]" merged with LATCH primitive "Display:ds|hex7[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Info (13026): Duplicate LATCH primitive "Display:ds|hex7[1]" merged with LATCH primitive "Display:ds|hex7[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Info (13026): Duplicate LATCH primitive "Display:ds|hex7[2]" merged with LATCH primitive "Display:ds|hex7[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Info (13026): Duplicate LATCH primitive "Display:ds|hex7[3]" merged with LATCH primitive "Display:ds|hex7[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Info (13026): Duplicate LATCH primitive "Display:ds|hex7[4]" merged with LATCH primitive "Display:ds|hex7[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Info (13026): Duplicate LATCH primitive "Display:ds|hex6[0]" merged with LATCH primitive "Display:ds|hex6[3]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Info (13026): Duplicate LATCH primitive "Display:ds|hex5[0]" merged with LATCH primitive "Display:ds|hex5[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Info (13026): Duplicate LATCH primitive "Display:ds|hex5[1]" merged with LATCH primitive "Display:ds|hex5[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Info (13026): Duplicate LATCH primitive "Display:ds|hex5[2]" merged with LATCH primitive "Display:ds|hex5[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Info (13026): Duplicate LATCH primitive "Display:ds|hex5[3]" merged with LATCH primitive "Display:ds|hex5[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Info (13026): Duplicate LATCH primitive "Display:ds|hex5[4]" merged with LATCH primitive "Display:ds|hex5[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Info (13026): Duplicate LATCH primitive "Display:ds|hex4[0]" merged with LATCH primitive "Display:ds|hex4[3]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Info (13026): Duplicate LATCH primitive "Display:ds|ledp1[0]" merged with LATCH primitive "Display:ds|ledp1[1]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Info (13026): Duplicate LATCH primitive "Display:ds|ledp2[0]" merged with LATCH primitive "Display:ds|ledp2[1]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-Warning (13012): Latch Display:ds|ledp1[1] has unsafe behavior File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Lot:lt|premio[0] File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 43
-Warning (13012): Latch Display:ds|ledp2[1] has unsafe behavior File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 24
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Lot:lt|premio[0] File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 43
+    Info (13026): Duplicate LATCH primitive "Display:ds|hex7[0]" merged with LATCH primitive "Display:ds|hex7[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+    Info (13026): Duplicate LATCH primitive "Display:ds|hex7[1]" merged with LATCH primitive "Display:ds|hex7[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+    Info (13026): Duplicate LATCH primitive "Display:ds|hex7[2]" merged with LATCH primitive "Display:ds|hex7[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+    Info (13026): Duplicate LATCH primitive "Display:ds|hex7[3]" merged with LATCH primitive "Display:ds|hex7[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+    Info (13026): Duplicate LATCH primitive "Display:ds|hex7[4]" merged with LATCH primitive "Display:ds|hex7[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+    Info (13026): Duplicate LATCH primitive "Display:ds|hex4[0]" merged with LATCH primitive "Display:ds|hex4[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+    Info (13026): Duplicate LATCH primitive "Display:ds|hex4[1]" merged with LATCH primitive "Display:ds|hex4[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+    Info (13026): Duplicate LATCH primitive "Display:ds|hex4[2]" merged with LATCH primitive "Display:ds|hex4[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+    Info (13026): Duplicate LATCH primitive "Display:ds|hex4[3]" merged with LATCH primitive "Display:ds|hex4[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
+    Info (13026): Duplicate LATCH primitive "Display:ds|hex4[4]" merged with LATCH primitive "Display:ds|hex4[5]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v Line: 46
 Warning (13012): Latch Lot:lt|premio[0] has unsafe behavior File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 43
     Warning (13013): Ports D and ENA on the latch are fed by the same signal Lot:lt|state[0] File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 72
 Warning (13012): Latch Lot:lt|premio[1] has unsafe behavior File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 43
     Warning (13013): Ports D and ENA on the latch are fed by the same signal Lot:lt|state[0] File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 72
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "Lot:lt|state[1]" is converted into an equivalent circuit using register "Lot:lt|state[1]~_emulated" and latch "Lot:lt|state[1]~1" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 72
-    Warning (13310): Register "Lot:lt|state[2]" is converted into an equivalent circuit using register "Lot:lt|state[2]~_emulated" and latch "Lot:lt|state[2]~6" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 72
-    Warning (13310): Register "Lot:lt|state[3]" is converted into an equivalent circuit using register "Lot:lt|state[3]~_emulated" and latch "Lot:lt|state[3]~11" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 72
-    Warning (13310): Register "Lot:lt|state[0]" is converted into an equivalent circuit using register "Lot:lt|state[0]~_emulated" and latch "Lot:lt|state[0]~16" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 72
+    Warning (13310): Register "Lot:lt|state[0]" is converted into an equivalent circuit using register "Lot:lt|state[0]~_emulated" and latch "Lot:lt|state[0]~1" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 72
+    Warning (13310): Register "Lot:lt|state[1]" is converted into an equivalent circuit using register "Lot:lt|state[1]~_emulated" and latch "Lot:lt|state[1]~6" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 72
+    Warning (13310): Register "Lot:lt|state[2]" is converted into an equivalent circuit using register "Lot:lt|state[2]~_emulated" and latch "Lot:lt|state[2]~11" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 72
+    Warning (13310): Register "Lot:lt|state[3]" is converted into an equivalent circuit using register "Lot:lt|state[3]~_emulated" and latch "Lot:lt|state[3]~16" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v Line: 72
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ledp1[1]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v Line: 7
+    Warning (13410): Pin "ledp1[0]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v Line: 7
+    Warning (13410): Pin "ledp2[1]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v Line: 7
+    Warning (13410): Pin "ledp2[0]" is stuck at GND File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v Line: 7
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/output_files/Lot.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 161 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 33 output pins
-    Info (21061): Implemented 119 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
-    Info: Peak virtual memory: 4741 megabytes
-    Info: Processing ended: Thu Nov 30 11:32:09 2023
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:25
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "sled[3]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v Line: 5
+    Warning (15610): No output dependent on input pin "sled[2]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v Line: 5
+    Warning (15610): No output dependent on input pin "sled[1]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v Line: 5
+    Warning (15610): No output dependent on input pin "sled[0]" File: C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v Line: 5
+Info (21057): Implemented 188 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 37 output pins
+    Info (21061): Implemented 138 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
+    Info: Peak virtual memory: 4752 megabytes
+    Info: Processing ended: Sun Dec 03 21:24:48 2023
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:26
 
 
 +------------------------------------------+
