@@ -6,8 +6,8 @@ module lot_tb;
   reg [3:0] num;
   wire [0:6] hex1, hex0, hex2, hex3;
   wire [0:1] ledp1, ledp2;
-  wire led15;
-  wire [3:0] state, sled,gled;
+  wire led15, sled;
+  wire [3:0] state, gled;
   
   
   
@@ -31,7 +31,7 @@ module lot_tb;
 	 .gled(gled)
   );
 
-  // Geração de clock sincronizada com insere
+ 
     /*
     Numeros para teste:
     47010 - premio 1 - 4 consecutivos
@@ -39,122 +39,103 @@ module lot_tb;
     47029 - premio 1 - 3 consequitivos + acerto 5o digito;
     23119 - premio 0 - 1 consequtivo + acerto 5o digito;
     49219 - premio 0 - 2 num, mas não consequtivos + acerto 5o digito;
+    17011 - prmeio 0 - 3 consecutivos + erro 5o digito;
     */
 
   initial begin
+    $dumpfile("teste_tp2_gtk.vcd");
+	 $dumpvars;
     clk = 0;
-	reset = 1;
-	insere = 0;
-	fim = 0;
-	fim_jogo = 0;
+    reset = 1;
+    insere = 0;
+    fim = 0;
+    fim_jogo = 0;
     #10
     reset = 0;
     #10
-    num = 4'b0100; //4
+
+    insere = 1;
+    num = 4'b0100; #10 num = 4'b0111; #10 num = 4'b0000; #10 num = 4'b0001; #10 num = 4'b0000; // 47010 
+    #10
+    insere = 0;
+    fim = 1;
+    #10
+    fim = 0;
+    $display("Premio sorteado: %d, Quantidade de P1: %d, Quantidade de P2: %d", uut.premio, uut.p1, uut.p2);
+    fim_jogo = 1;
+    #10
+    fim_jogo = 0;
+    #10
     insere = 1;
 
+    num = 4'b0110; #10 num = 4'b0111; #10 num = 4'b0000; #10 num = 4'b0011; #10 num = 4'b1001; // 67039
     #10
-    num = 4'b0111; //7
+    insere = 0;
+    #10
+    fim = 1;
+    #10
+    fim = 0;
+    $display("Premio sorteado: %d, Quantidade de P1: %d, Quantidade de P2: %d", uut.premio, uut.p1, uut.p2);
+    fim_jogo = 1;
+    #10
+
+    fim_jogo = 0;
+    #10
+    insere = 1;
+    num = 4'b0100; #10 num = 4'b0111; #10 num = 4'b0000; #10 num = 4'b0010; #10 num = 4'b1001; 
+    #10
+    insere = 0;
+    #10
+    fim = 1;
+    #10
+    fim = 0;
+    $display("Premio sorteado: %d, Quantidade de P1: %d, Quantidade de P2: %d", uut.premio, uut.p1, uut.p2);
+    fim_jogo = 1;
+    #10
+    fim_jogo = 0;
+    #10
+
+    insere = 1;
+    num = 4'b0010; #10 num = 4'b0011; #10 num = 4'b0001; #10 num = 4'b0001; #10 num = 4'b1001; // 49219
+    #10
+    insere = 0;
+    #10
+    fim = 1;
+    #10
+    fim = 0;
+    $display("Premio sorteado: %d, Quantidade de P1: %d, Quantidade de P2: %d", uut.premio, uut.p1, uut.p2);
+    fim_jogo = 1;
+    #10
+    fim_jogo = 0;
+    #10
+
+    insere = 1;
+    num = 4'b0010; #10 num = 4'b0011; #10 num = 4'b0001; #10 num = 4'b0001; #10 num = 4'b1001; // 23119
+    #10
+    insere = 0;
+    #10
+    fim = 1;
+    #10
+    fim = 0;
+    $display("Premio sorteado: %d, Quantidade de P1: %d, Quantidade de P2: %d", uut.premio, uut.p1, uut.p2);
+    fim_jogo = 1;
+    #10
+    fim_jogo = 0;
+    #10
     
-    #10
-    num = 4'b0000; //0
-
-    #10
-    num = 4'b0001; //1
-
-    #10
-    num = 4'b0000; //0
-
-    #10
-    insere = 0;
-    fim = 1;
-    #10
-    fim = 0;
-    fim_jogo = 1;
-
-    #10
-    fim_jogo = 0;
-    #10
     insere = 1;
-    num = 4'b0110; //6
-    #10
-    num = 4'b0111; //7
-    #10
-    num = 4'b0000; //0
-    #10
-    num = 4'b0011; //3
-    #10
-    num = 4'b1001; //9
+    num = 4'b0001; #10 num = 4'b0111; #10 num = 4'b0000; #10 num = 4'b0001; #10 num = 4'b0001; // 17011
     #10
     insere = 0;
     #10
     fim = 1;
     #10
     fim = 0;
+    $display("Premio sorteado: %d, Quantidade de P1: %d, Quantidade de P2: %d", uut.premio, uut.p1, uut.p2);
     fim_jogo = 1;
     #10
 
-    fim_jogo = 0;
-    #10
-    insere = 1;
-    num = 4'b0100; //4
-    #10
-    num = 4'b0111; //7
-    #10
-    num = 4'b0000; //0
-    #10
-    num = 4'b0010; //2
-    #10
-    num = 4'b1001; //9
-    #10
-    insere = 0;
-    #10
-    fim = 1;
-    #10
-    fim = 0;
-    fim_jogo = 1;
-    #10
-    fim_jogo = 0;
-    #10
-    insere = 1;
-    num = 4'b0010; //2 
-    #10
-    num = 4'b0011; //3
-    #10
-    num = 4'b0001; //1
-    #10
-    num = 4'b0001; //1
-    #10
-    num = 4'b1001; //9
-    #10
-    insere = 0;
-    #10
-    fim = 1;
-    #10
-    fim = 0;
-    fim_jogo = 1;
-    #10
-    fim_jogo = 0;
-    #10
-    insere = 1;
-    num = 4'b0100; //4
-    #10
-    num = 4'b1001; //9
-    #10
-    num = 4'b0010; //2
-    #10
-    num = 4'b0001; //1
-    #10
-    num = 4'b1001; //9
-    #10
-    insere = 0;
-    #10
-    fim = 1;
-    #10
-    fim = 0;
-    fim_jogo = 1;
-    #10
-	 reset = 1;
+	  reset = 1;
 
     $stop;
   end

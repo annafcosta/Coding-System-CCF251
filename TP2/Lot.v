@@ -3,7 +3,7 @@ module Lot(clk, num, reset, fim, fim_jogo, insere, premio, p1, p2, state);
   input  [3:0] num;
   output reg [1:0] premio;
   output reg [4:0] p1, p2;
-  output reg [3:0] state; // registrador de estados ps; mudei aqui
+  output reg [3:0] state; // registrador de estados 
   reg [3:0] c;   // registrador de consecutivos
   
   // num da loteria: 47019
@@ -40,7 +40,7 @@ module Lot(clk, num, reset, fim, fim_jogo, insere, premio, p1, p2, state);
 			p1 <= 5'b00000;
 			p2 <= 5'b00000;
 			c <= 4'b0000;
-    end else if (fim_jogo == 1'b1) begin
+    end else if (fim_jogo == 1'b1) begin // acionado o fim_jogo, a maquina volta para o estado 0
 			state <= s0;
 			premio <= 2'b00;
 			c <= 4'b0000;
@@ -142,7 +142,7 @@ module Lot(clk, num, reset, fim, fim_jogo, insere, premio, p1, p2, state);
                             if(insere &&(num == 4'b1001))begin // caso acerte 3 consecutivo e o digito 5, ganha o premio 1;
                                 state <= sg1;
                             end else if(insere && (num != 4'b1001))begin
-                                state <= sg2; // caso erre o 5, fica com 3 consecutivo e ganha o premio 2;
+                                state <= sg0; // caso erre o 5, fica com 3 consecutivo e não ganha nada;
                             end
                         end
 						default: begin

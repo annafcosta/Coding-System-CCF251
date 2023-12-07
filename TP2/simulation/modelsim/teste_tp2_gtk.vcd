@@ -1,0 +1,1225 @@
+$date
+	Thu Dec 07 01:50:48 2023
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module lot_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$var reg 1 # fim $end
+$var reg 1 $ insere $end
+$var reg 1 % fim_jogo $end
+$var reg 4 & num [3:0] $end
+$var wire 1 ' hex1 [0] $end
+$var wire 1 ( hex1 [1] $end
+$var wire 1 ) hex1 [2] $end
+$var wire 1 * hex1 [3] $end
+$var wire 1 + hex1 [4] $end
+$var wire 1 , hex1 [5] $end
+$var wire 1 - hex1 [6] $end
+$var wire 1 . hex0 [0] $end
+$var wire 1 / hex0 [1] $end
+$var wire 1 0 hex0 [2] $end
+$var wire 1 1 hex0 [3] $end
+$var wire 1 2 hex0 [4] $end
+$var wire 1 3 hex0 [5] $end
+$var wire 1 4 hex0 [6] $end
+$var wire 1 5 hex2 [0] $end
+$var wire 1 6 hex2 [1] $end
+$var wire 1 7 hex2 [2] $end
+$var wire 1 8 hex2 [3] $end
+$var wire 1 9 hex2 [4] $end
+$var wire 1 : hex2 [5] $end
+$var wire 1 ; hex2 [6] $end
+$var wire 1 < hex3 [0] $end
+$var wire 1 = hex3 [1] $end
+$var wire 1 > hex3 [2] $end
+$var wire 1 ? hex3 [3] $end
+$var wire 1 @ hex3 [4] $end
+$var wire 1 A hex3 [5] $end
+$var wire 1 B hex3 [6] $end
+$var wire 1 C ledp1 [0] $end
+$var wire 1 D ledp1 [1] $end
+$var wire 1 E ledp2 [0] $end
+$var wire 1 F ledp2 [1] $end
+$var wire 1 G led15 $end
+$var wire 1 H sled $end
+$var wire 1 I state [3] $end
+$var wire 1 J state [2] $end
+$var wire 1 K state [1] $end
+$var wire 1 L state [0] $end
+$var wire 1 M gled [3] $end
+$var wire 1 N gled [2] $end
+$var wire 1 O gled [1] $end
+$var wire 1 P gled [0] $end
+
+$scope module uut $end
+$var wire 1 Q clk $end
+$var wire 1 R fim $end
+$var wire 1 S insere $end
+$var wire 1 T fim_jogo $end
+$var wire 1 U reset $end
+$var wire 1 V num [3] $end
+$var wire 1 W num [2] $end
+$var wire 1 X num [1] $end
+$var wire 1 Y num [0] $end
+$var wire 1 . hex0 [0] $end
+$var wire 1 / hex0 [1] $end
+$var wire 1 0 hex0 [2] $end
+$var wire 1 1 hex0 [3] $end
+$var wire 1 2 hex0 [4] $end
+$var wire 1 3 hex0 [5] $end
+$var wire 1 4 hex0 [6] $end
+$var wire 1 ' hex1 [0] $end
+$var wire 1 ( hex1 [1] $end
+$var wire 1 ) hex1 [2] $end
+$var wire 1 * hex1 [3] $end
+$var wire 1 + hex1 [4] $end
+$var wire 1 , hex1 [5] $end
+$var wire 1 - hex1 [6] $end
+$var wire 1 5 hex2 [0] $end
+$var wire 1 6 hex2 [1] $end
+$var wire 1 7 hex2 [2] $end
+$var wire 1 8 hex2 [3] $end
+$var wire 1 9 hex2 [4] $end
+$var wire 1 : hex2 [5] $end
+$var wire 1 ; hex2 [6] $end
+$var wire 1 < hex3 [0] $end
+$var wire 1 = hex3 [1] $end
+$var wire 1 > hex3 [2] $end
+$var wire 1 ? hex3 [3] $end
+$var wire 1 @ hex3 [4] $end
+$var wire 1 A hex3 [5] $end
+$var wire 1 B hex3 [6] $end
+$var wire 1 C ledp1 [0] $end
+$var wire 1 D ledp1 [1] $end
+$var wire 1 E ledp2 [0] $end
+$var wire 1 F ledp2 [1] $end
+$var wire 1 G led15 $end
+$var wire 1 H sled $end
+$var wire 1 M gled [3] $end
+$var wire 1 N gled [2] $end
+$var wire 1 O gled [1] $end
+$var wire 1 P gled [0] $end
+$var wire 1 I state [3] $end
+$var wire 1 J state [2] $end
+$var wire 1 K state [1] $end
+$var wire 1 L state [0] $end
+$var wire 1 Z premio [1] $end
+$var wire 1 [ premio [0] $end
+$var wire 1 \ p1 [4] $end
+$var wire 1 ] p1 [3] $end
+$var wire 1 ^ p1 [2] $end
+$var wire 1 _ p1 [1] $end
+$var wire 1 ` p1 [0] $end
+$var wire 1 a p2 [4] $end
+$var wire 1 b p2 [3] $end
+$var wire 1 c p2 [2] $end
+$var wire 1 d p2 [1] $end
+$var wire 1 e p2 [0] $end
+
+$scope module lt $end
+$var parameter 4 f s0 $end
+$var parameter 4 g s1 $end
+$var parameter 4 h s2 $end
+$var parameter 4 i s3 $end
+$var parameter 4 j s4 $end
+$var parameter 4 k sg1 $end
+$var parameter 4 l sg2 $end
+$var parameter 4 m sg0 $end
+$var parameter 4 n sgx $end
+$var wire 1 Q clk $end
+$var wire 1 U reset $end
+$var wire 1 R fim $end
+$var wire 1 S insere $end
+$var wire 1 T fim_jogo $end
+$var wire 1 V num [3] $end
+$var wire 1 W num [2] $end
+$var wire 1 X num [1] $end
+$var wire 1 Y num [0] $end
+$var reg 2 o premio [1:0] $end
+$var reg 5 p p1 [4:0] $end
+$var reg 5 q p2 [4:0] $end
+$var reg 4 r state [3:0] $end
+$var reg 4 s c [3:0] $end
+$upscope $end
+
+$scope module ds $end
+$var parameter 7 t zero $end
+$var parameter 7 u um $end
+$var parameter 7 v dois $end
+$var parameter 7 w tres $end
+$var parameter 7 x quatro $end
+$var parameter 7 y cinco $end
+$var parameter 7 z seis $end
+$var parameter 7 { sete $end
+$var parameter 7 | oito $end
+$var parameter 7 } nove $end
+$var parameter 7 ~ traco $end
+$var parameter 7 !! apagado $end
+$var parameter 4 "! s0 $end
+$var parameter 4 #! s1 $end
+$var parameter 4 $! s2 $end
+$var parameter 4 %! s3 $end
+$var parameter 4 &! s4 $end
+$var parameter 4 '! sg1 $end
+$var parameter 4 (! sg2 $end
+$var parameter 4 )! sg0 $end
+$var parameter 4 *! sgx $end
+$var wire 1 +! clk $end
+$var wire 1 U reset $end
+$var wire 1 Z premio_f [1] $end
+$var wire 1 [ premio_f [0] $end
+$var wire 1 \ p1_f [4] $end
+$var wire 1 ] p1_f [3] $end
+$var wire 1 ^ p1_f [2] $end
+$var wire 1 _ p1_f [1] $end
+$var wire 1 ` p1_f [0] $end
+$var wire 1 a p2_f [4] $end
+$var wire 1 b p2_f [3] $end
+$var wire 1 c p2_f [2] $end
+$var wire 1 d p2_f [1] $end
+$var wire 1 e p2_f [0] $end
+$var wire 1 I state_f [3] $end
+$var wire 1 J state_f [2] $end
+$var wire 1 K state_f [1] $end
+$var wire 1 L state_f [0] $end
+$var reg 7 ,! hex1 [0:6] $end
+$var reg 7 -! hex0 [0:6] $end
+$var reg 7 .! hex2 [0:6] $end
+$var reg 7 /! hex3 [0:6] $end
+$var reg 2 0! ledp1 [0:1] $end
+$var reg 2 1! ledp2 [0:1] $end
+$var reg 1 2! led15 $end
+$var reg 1 3! sled $end
+$var reg 4 4! gled [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+0$
+0%
+bx &
+b0 o
+b0 p
+b0 q
+b0 r
+b0 s
+b1111110 ,!
+b1111110 -!
+b1111110 .!
+b1111110 /!
+b0 0!
+b0 1!
+02!
+13!
+b0 4!
+b0 f
+b1 g
+b10 h
+b11 i
+b100 j
+b101 k
+b110 l
+b111 m
+b1000 n
+b1 t
+b1001111 u
+b10010 v
+b110 w
+b1001100 x
+b100100 y
+b100000 z
+b1111 {
+b0 |
+b100 }
+b1111110 ~
+b0 !!
+b0 "!
+b1 #!
+b10 $!
+b11 %!
+b100 &!
+b101 '!
+b110 (!
+b111 )!
+b1000 *!
+0-
+1,
+1+
+1*
+1)
+1(
+1'
+04
+13
+12
+11
+10
+1/
+1.
+0;
+1:
+19
+18
+17
+16
+15
+0B
+1A
+1@
+1?
+1>
+1=
+1<
+0D
+0C
+0F
+0E
+0G
+1H
+0L
+0K
+0J
+0I
+0P
+0O
+0N
+0M
+0[
+0Z
+0`
+0_
+0^
+0]
+0\
+0e
+0d
+0c
+0b
+0a
+0S
+0T
+0R
+1U
+xY
+xX
+xW
+xV
+0Q
+z+!
+$end
+#5000
+1!
+1Q
+#10000
+0"
+0!
+0U
+0Q
+#15000
+1!
+1Q
+#20000
+1$
+b100 &
+0!
+1S
+0Y
+0X
+1W
+0V
+0Q
+#25000
+1!
+1Q
+b1 s
+b1 r
+1L
+b1 4!
+03!
+1P
+0H
+#30000
+b111 &
+0!
+1Y
+1X
+0Q
+#35000
+1!
+1Q
+b10 s
+b10 r
+0L
+1K
+b10 4!
+13!
+0P
+1O
+1H
+#40000
+b0 &
+0!
+0Y
+0X
+0W
+0Q
+#45000
+1!
+1Q
+b11 s
+b11 r
+1L
+b11 4!
+03!
+1P
+0H
+#50000
+b1 &
+0!
+1Y
+0Q
+#55000
+1!
+1Q
+b101 r
+0K
+1J
+b101 4!
+13!
+0O
+1N
+1H
+#60000
+b0 &
+0!
+0Y
+0Q
+#65000
+1!
+1Q
+#70000
+0$
+1#
+0!
+0S
+1R
+0Q
+b1 o
+1[
+b11 0!
+b1 ,!
+b1 -!
+14
+03
+02
+01
+00
+0/
+0.
+1-
+0,
+0+
+0*
+0)
+0(
+0'
+1D
+1C
+b1 p
+b1000 r
+0L
+0J
+1I
+1`
+b1001111 -!
+13
+12
+11
+1.
+b1000 4!
+03!
+0P
+0N
+1M
+0H
+#75000
+1!
+1Q
+#80000
+0#
+1%
+0!
+0R
+1T
+0Q
+b0 r
+b0 o
+b0 s
+0[
+0I
+b0 0!
+0D
+0C
+b0 4!
+13!
+0M
+1H
+#85000
+1!
+1Q
+#90000
+0%
+0!
+0T
+0Q
+#95000
+1!
+1Q
+#100000
+1$
+b110 &
+0!
+1S
+1X
+1W
+0Q
+#105000
+1!
+1Q
+b1 r
+1L
+b1 4!
+03!
+1P
+0H
+#110000
+b111 &
+0!
+1Y
+0Q
+#115000
+1!
+1Q
+b1 s
+b10 r
+0L
+1K
+b10 4!
+13!
+0P
+1O
+1H
+#120000
+b0 &
+0!
+0Y
+0X
+0W
+0Q
+#125000
+1!
+1Q
+b10 s
+b11 r
+1L
+b11 4!
+03!
+1P
+0H
+#130000
+b11 &
+0!
+1Y
+1X
+0Q
+#135000
+1!
+1Q
+b100 r
+0L
+0K
+1J
+b100 4!
+13!
+12!
+0P
+0O
+1N
+1H
+1G
+#140000
+b1001 &
+0!
+0X
+1V
+0Q
+#145000
+1!
+1Q
+b110 r
+1K
+b110 4!
+03!
+02!
+1O
+0H
+0G
+#150000
+0$
+0!
+0S
+0Q
+#155000
+1!
+1Q
+#160000
+1#
+0!
+1R
+0Q
+b10 o
+1Z
+b11 1!
+b1 /!
+b1 .!
+1;
+0:
+09
+08
+07
+06
+05
+1B
+0A
+0@
+0?
+0>
+0=
+0<
+1F
+1E
+b1 q
+b1000 r
+0K
+0J
+1I
+1e
+b1001111 .!
+1:
+19
+18
+15
+b1000 4!
+13!
+0O
+0N
+1M
+1H
+#165000
+1!
+1Q
+#170000
+0#
+1%
+0!
+0R
+1T
+0Q
+b0 r
+b0 o
+b0 s
+0Z
+0I
+b0 1!
+0F
+0E
+b0 4!
+0M
+#175000
+1!
+1Q
+#180000
+0%
+0!
+0T
+0Q
+#185000
+1!
+1Q
+#190000
+1$
+b100 &
+0!
+1S
+0Y
+1W
+0V
+0Q
+#195000
+1!
+1Q
+b1 s
+b1 r
+1L
+b1 4!
+03!
+1P
+0H
+#200000
+b111 &
+0!
+1Y
+1X
+0Q
+#205000
+1!
+1Q
+b10 s
+b10 r
+0L
+1K
+b10 4!
+13!
+0P
+1O
+1H
+#210000
+b0 &
+0!
+0Y
+0X
+0W
+0Q
+#215000
+1!
+1Q
+b11 s
+b11 r
+1L
+b11 4!
+03!
+1P
+0H
+#220000
+b10 &
+0!
+1X
+0Q
+#225000
+1!
+1Q
+b100 r
+0L
+0K
+1J
+b100 4!
+13!
+12!
+0P
+0O
+1N
+1H
+1G
+#230000
+b1001 &
+0!
+1Y
+0X
+1V
+0Q
+#235000
+1!
+1Q
+b101 r
+1L
+b101 4!
+03!
+02!
+1P
+0H
+0G
+#240000
+0$
+0!
+0S
+0Q
+#245000
+1!
+1Q
+#250000
+1#
+0!
+1R
+0Q
+b1 o
+1[
+b11 0!
+1D
+1C
+b10 p
+b1000 r
+0L
+0J
+1I
+0`
+1_
+b10010 -!
+04
+02
+01
+10
+0.
+b1000 4!
+13!
+0P
+0N
+1M
+1H
+#255000
+1!
+1Q
+#260000
+0#
+1%
+0!
+0R
+1T
+0Q
+b0 r
+b0 o
+b0 s
+0[
+0I
+b0 0!
+0D
+0C
+b0 4!
+0M
+#265000
+1!
+1Q
+#270000
+0%
+0!
+0T
+0Q
+#275000
+1!
+1Q
+#280000
+1$
+b10 &
+0!
+1S
+0Y
+1X
+0V
+0Q
+#285000
+1!
+1Q
+b1 r
+1L
+b1 4!
+03!
+1P
+0H
+#290000
+b11 &
+0!
+1Y
+0Q
+#295000
+1!
+1Q
+b10 r
+0L
+1K
+b10 4!
+13!
+0P
+1O
+1H
+#300000
+b1 &
+0!
+0X
+0Q
+#305000
+1!
+1Q
+b11 r
+1L
+b11 4!
+03!
+1P
+0H
+#310000
+0!
+0Q
+#315000
+1!
+1Q
+b1 s
+b100 r
+0L
+0K
+1J
+b100 4!
+13!
+12!
+0P
+0O
+1N
+1H
+1G
+#320000
+b1001 &
+0!
+1V
+0Q
+#325000
+1!
+1Q
+b111 r
+1L
+1K
+b111 4!
+03!
+02!
+1P
+1O
+0H
+0G
+#330000
+0$
+0!
+0S
+0Q
+#335000
+1!
+1Q
+#340000
+1#
+0!
+1R
+0Q
+b1000 r
+0L
+0K
+0J
+1I
+b1000 4!
+13!
+0P
+0O
+0N
+1M
+1H
+#345000
+1!
+1Q
+#350000
+0#
+1%
+0!
+0R
+1T
+0Q
+b0 r
+b0 s
+0I
+b0 4!
+0M
+#355000
+1!
+1Q
+#360000
+0%
+0!
+0T
+0Q
+#365000
+1!
+1Q
+#370000
+1$
+b10 &
+0!
+1S
+0Y
+1X
+0V
+0Q
+#375000
+1!
+1Q
+b1 r
+1L
+b1 4!
+03!
+1P
+0H
+#380000
+b11 &
+0!
+1Y
+0Q
+#385000
+1!
+1Q
+b10 r
+0L
+1K
+b10 4!
+13!
+0P
+1O
+1H
+#390000
+b1 &
+0!
+0X
+0Q
+#395000
+1!
+1Q
+b11 r
+1L
+b11 4!
+03!
+1P
+0H
+#400000
+0!
+0Q
+#405000
+1!
+1Q
+b1 s
+b100 r
+0L
+0K
+1J
+b100 4!
+13!
+12!
+0P
+0O
+1N
+1H
+1G
+#410000
+b1001 &
+0!
+1V
+0Q
+#415000
+1!
+1Q
+b111 r
+1L
+1K
+b111 4!
+03!
+02!
+1P
+1O
+0H
+0G
+#420000
+0$
+0!
+0S
+0Q
+#425000
+1!
+1Q
+#430000
+1#
+0!
+1R
+0Q
+b1000 r
+0L
+0K
+0J
+1I
+b1000 4!
+13!
+0P
+0O
+0N
+1M
+1H
+#435000
+1!
+1Q
+#440000
+0#
+1%
+0!
+0R
+1T
+0Q
+b0 r
+b0 s
+0I
+b0 4!
+0M
+#445000
+1!
+1Q
+#450000
+0%
+0!
+0T
+0Q
+#455000
+1!
+1Q
+#460000
+1$
+b1 &
+0!
+1S
+0V
+0Q
+#465000
+1!
+1Q
+b1 r
+1L
+b1 4!
+03!
+1P
+0H
+#470000
+b111 &
+0!
+1X
+1W
+0Q
+#475000
+1!
+1Q
+b1 s
+b10 r
+0L
+1K
+b10 4!
+13!
+0P
+1O
+1H
+#480000
+b0 &
+0!
+0Y
+0X
+0W
+0Q
+#485000
+1!
+1Q
+b10 s
+b11 r
+1L
+b11 4!
+03!
+1P
+0H
+#490000
+b1 &
+0!
+1Y
+0Q
+#495000
+1!
+1Q
+b11 s
+b100 r
+0L
+0K
+1J
+b100 4!
+13!
+12!
+0P
+0O
+1N
+1H
+1G
+#500000
+0!
+0Q
+#505000
+1!
+1Q
+b111 r
+1L
+1K
+b111 4!
+03!
+02!
+1P
+1O
+0H
+0G
+#510000
+0$
+0!
+0S
+0Q
+#515000
+1!
+1Q
+#520000
+1#
+0!
+1R
+0Q
+b1000 r
+0L
+0K
+0J
+1I
+b1000 4!
+13!
+0P
+0O
+0N
+1M
+1H
+#525000
+1!
+1Q
+#530000
+0#
+1%
+0!
+0R
+1T
+0Q
+b0 r
+b0 s
+0I
+b0 4!
+0M
+#535000
+1!
+1Q
+#540000
+1"

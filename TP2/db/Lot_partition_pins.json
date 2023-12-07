@@ -184,7 +184,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "insere",
+					"name" : "num[0]",
 					"strict" : false
 				},
 				{
@@ -196,11 +196,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "num[0]",
+					"name" : "num[3]",
 					"strict" : false
 				},
 				{
-					"name" : "num[3]",
+					"name" : "insere",
 					"strict" : false
 				},
 				{

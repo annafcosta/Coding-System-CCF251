@@ -1,5 +1,5 @@
 Flow report for Lot
-Mon Dec 04 14:44:11 2023
+Thu Dec 07 01:50:16 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Dec 04 14:44:11 2023       ;
+; Flow Status                        ; Successful - Thu Dec 07 01:50:16 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Lot                                         ;
 ; Top-level Entity Name              ; Top                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 146 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 146 / 114,480 ( < 1 % )                     ;
+; Total logic elements               ; 141 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 141 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 8 / 114,480 ( < 1 % )                       ;
 ; Total registers                    ; 8                                           ;
 ; Total pins                         ; 51 / 529 ( 10 % )                           ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/04/2023 14:43:26 ;
+; Start date & time ; 12/07/2023 01:49:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lot                 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 110073158885119.170171180510364        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 110073158885119.170192456719508        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; lot_tb                            ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -108,12 +108,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4729 MB             ; 00:00:26                           ;
-; Fitter               ; 00:00:22     ; 1.0                     ; 5434 MB             ; 00:00:30                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4688 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 4823 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4645 MB             ; 00:00:01                           ;
-; Total                ; 00:00:41     ; --                      ; --                  ; 00:01:04                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4735 MB             ; 00:00:28                           ;
+; Fitter               ; 00:00:24     ; 1.0                     ; 5438 MB             ; 00:00:32                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4687 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4823 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4645 MB             ; 00:00:01                           ;
+; Total                ; 00:00:46     ; --                      ; --                  ; 00:01:08                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

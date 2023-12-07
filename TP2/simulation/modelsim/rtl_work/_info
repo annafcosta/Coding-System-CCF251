@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/simulation/modelsim
 vDisplay
-Z1 !s110 1701711953
+Z1 !s110 1701924642
 !i10b 1
 !s100 nR0SYMHh=Hn<hmjJ<dchU1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -26,7 +26,7 @@ Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1701711952.000000
+Z5 !s108 1701924642.000000
 !s107 C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2|C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v|
 !i113 1
@@ -35,14 +35,14 @@ Z7 !s92 -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-
 Z8 tCvgOpt 0
 n@display
 vLot
-!s110 1701711952
+R1
 !i10b 1
-!s100 lNo>47[2hB0lziC8^MS^l0
+!s100 Ob8<J>CNP6QV=mOX>K9H83
 R2
-IE_FKJG=XNLj]C4>F^Hk]<0
+IF9L7:@aUJoDI_2?QQYI9R3
 R3
 R0
-w1701711636
+w1701924565
 8C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v
 FC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v
 !i122 0
@@ -60,23 +60,23 @@ R7
 R8
 n@lot
 vlot_tb
-R1
+Z9 !s110 1701924643
 !i10b 1
-!s100 Ii2C^IOL3V0]eE^X_LH[23
+!s100 [l=`=]Lz<HKdSNd2THP883
 R2
-IA]`HPX2KBokK2OA6PgBAC3
+IK_c4RKgj:?gCMhUMR12=n3
 R3
 R0
-w1701711805
+w1701924566
 8C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v
 FC:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v
 !i122 3
-L0 3 161
+L0 3 142
 R4
 r1
 !s85 0
 31
-Z9 !s108 1701711953.000000
+Z10 !s108 1701924643.000000
 !s107 C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2|C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v|
 !i113 1
@@ -84,7 +84,7 @@ R6
 R7
 R8
 vTop
-R1
+R9
 !i10b 1
 !s100 VMSlB^zVSaLhzFZSkZWoh2
 R2
@@ -100,7 +100,7 @@ R4
 r1
 !s85 0
 31
-R9
+R10
 !s107 C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2|C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v|
 !i113 1
