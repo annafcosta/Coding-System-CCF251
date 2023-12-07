@@ -1,0 +1,935 @@
+$date
+	Thu Dec  7 02:08:20 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module lot_tb $end
+$var wire 4 ! state [3:0] $end
+$var wire 1 " sled $end
+$var wire 2 # ledp2 [0:1] $end
+$var wire 2 $ ledp1 [0:1] $end
+$var wire 1 % led15 $end
+$var wire 7 & hex3 [0:6] $end
+$var wire 7 ' hex2 [0:6] $end
+$var wire 7 ( hex1 [0:6] $end
+$var wire 7 ) hex0 [0:6] $end
+$var wire 4 * gled [3:0] $end
+$var reg 1 + clk $end
+$var reg 1 , fim $end
+$var reg 1 - fim_jogo $end
+$var reg 1 . insere $end
+$var reg 4 / num [3:0] $end
+$var reg 1 0 reset $end
+$scope module uut $end
+$var wire 1 + clk $end
+$var wire 1 , fim $end
+$var wire 1 - fim_jogo $end
+$var wire 1 . insere $end
+$var wire 4 1 num [3:0] $end
+$var wire 1 0 reset $end
+$var wire 4 2 state [3:0] $end
+$var wire 1 " sled $end
+$var wire 2 3 premio [1:0] $end
+$var wire 5 4 p2 [4:0] $end
+$var wire 5 5 p1 [4:0] $end
+$var wire 2 6 ledp2 [0:1] $end
+$var wire 2 7 ledp1 [0:1] $end
+$var wire 1 % led15 $end
+$var wire 7 8 hex3 [0:6] $end
+$var wire 7 9 hex2 [0:6] $end
+$var wire 7 : hex1 [0:6] $end
+$var wire 7 ; hex0 [0:6] $end
+$var wire 4 < gled [3:0] $end
+$scope module ds $end
+$var wire 1 = clk $end
+$var wire 1 0 reset $end
+$var wire 4 > state_f [3:0] $end
+$var wire 2 ? premio_f [1:0] $end
+$var wire 5 @ p2_f [4:0] $end
+$var wire 5 A p1_f [4:0] $end
+$var parameter 7 B apagado $end
+$var parameter 7 C cinco $end
+$var parameter 7 D dois $end
+$var parameter 7 E nove $end
+$var parameter 7 F oito $end
+$var parameter 7 G quatro $end
+$var parameter 4 H s0 $end
+$var parameter 4 I s1 $end
+$var parameter 4 J s2 $end
+$var parameter 4 K s3 $end
+$var parameter 4 L s4 $end
+$var parameter 7 M seis $end
+$var parameter 7 N sete $end
+$var parameter 4 O sg0 $end
+$var parameter 4 P sg1 $end
+$var parameter 4 Q sg2 $end
+$var parameter 4 R sgx $end
+$var parameter 7 S traco $end
+$var parameter 7 T tres $end
+$var parameter 7 U um $end
+$var parameter 7 V zero $end
+$var reg 4 W gled [3:0] $end
+$var reg 7 X hex0 [0:6] $end
+$var reg 7 Y hex1 [0:6] $end
+$var reg 7 Z hex2 [0:6] $end
+$var reg 7 [ hex3 [0:6] $end
+$var reg 1 % led15 $end
+$var reg 2 \ ledp1 [0:1] $end
+$var reg 2 ] ledp2 [0:1] $end
+$var reg 1 " sled $end
+$upscope $end
+$scope module lt $end
+$var wire 1 + clk $end
+$var wire 1 , fim $end
+$var wire 1 - fim_jogo $end
+$var wire 1 . insere $end
+$var wire 4 ^ num [3:0] $end
+$var wire 1 0 reset $end
+$var parameter 4 _ s0 $end
+$var parameter 4 ` s1 $end
+$var parameter 4 a s2 $end
+$var parameter 4 b s3 $end
+$var parameter 4 c s4 $end
+$var parameter 4 d sg0 $end
+$var parameter 4 e sg1 $end
+$var parameter 4 f sg2 $end
+$var parameter 4 g sgx $end
+$var reg 4 h c [3:0] $end
+$var reg 5 i p1 [4:0] $end
+$var reg 5 j p2 [4:0] $end
+$var reg 2 k premio [1:0] $end
+$var reg 4 l state [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 g
+b110 f
+b101 e
+b111 d
+b100 c
+b11 b
+b10 a
+b1 `
+b0 _
+b1 V
+b1001111 U
+b110 T
+b1111110 S
+b1000 R
+b110 Q
+b101 P
+b111 O
+b1111 N
+b100000 M
+b100 L
+b11 K
+b10 J
+b1 I
+b0 H
+b1001100 G
+b0 F
+b100 E
+b10010 D
+b100100 C
+b0 B
+$end
+#0
+$dumpvars
+b0 l
+b0 k
+b0 j
+b0 i
+b0 h
+bx ^
+b0 ]
+b0 \
+b1111110 [
+b1111110 Z
+b1111110 Y
+b1111110 X
+b0 W
+b0 A
+b0 @
+b0 ?
+b0 >
+z=
+b0 <
+b1111110 ;
+b1111110 :
+b1111110 9
+b1111110 8
+b0 7
+b0 6
+b0 5
+b0 4
+b0 3
+b0 2
+bx 1
+10
+bx /
+0.
+0-
+0,
+0+
+b0 *
+b1111110 )
+b1111110 (
+b1111110 '
+b1111110 &
+0%
+b0 $
+b0 #
+1"
+b0 !
+$end
+#5000
+1+
+#10000
+0+
+00
+#15000
+1+
+#20000
+0+
+b100 /
+b100 1
+b100 ^
+1.
+#25000
+0"
+b1 *
+b1 <
+b1 W
+b1 !
+b1 2
+b1 >
+b1 l
+b1 h
+1+
+#30000
+0+
+b111 /
+b111 1
+b111 ^
+#35000
+1"
+b10 *
+b10 <
+b10 W
+b10 !
+b10 2
+b10 >
+b10 l
+b10 h
+1+
+#40000
+0+
+b0 /
+b0 1
+b0 ^
+#45000
+0"
+b11 *
+b11 <
+b11 W
+b11 !
+b11 2
+b11 >
+b11 l
+b11 h
+1+
+#50000
+0+
+b1 /
+b1 1
+b1 ^
+#55000
+1"
+b101 *
+b101 <
+b101 W
+b101 !
+b101 2
+b101 >
+b101 l
+1+
+#60000
+0+
+b0 /
+b0 1
+b0 ^
+#65000
+1+
+#70000
+0"
+b1000 *
+b1000 <
+b1000 W
+b1000 !
+b1000 2
+b1000 >
+b1000 l
+b1 5
+b1 A
+b1 i
+b1001111 )
+b1001111 ;
+b1001111 X
+b1 (
+b1 :
+b1 Y
+b11 $
+b11 7
+b11 \
+b1 3
+b1 ?
+b1 k
+0+
+1,
+0.
+#75000
+1+
+#80000
+1"
+b0 *
+b0 <
+b0 W
+b0 $
+b0 7
+b0 \
+b0 h
+b0 3
+b0 ?
+b0 k
+b0 !
+b0 2
+b0 >
+b0 l
+0+
+1-
+0,
+#85000
+1+
+#90000
+0+
+0-
+#95000
+1+
+#100000
+0+
+b110 /
+b110 1
+b110 ^
+1.
+#105000
+0"
+b1 *
+b1 <
+b1 W
+b1 !
+b1 2
+b1 >
+b1 l
+1+
+#110000
+0+
+b111 /
+b111 1
+b111 ^
+#115000
+1"
+b10 *
+b10 <
+b10 W
+b10 !
+b10 2
+b10 >
+b10 l
+b1 h
+1+
+#120000
+0+
+b0 /
+b0 1
+b0 ^
+#125000
+0"
+b11 *
+b11 <
+b11 W
+b11 !
+b11 2
+b11 >
+b11 l
+b10 h
+1+
+#130000
+0+
+b11 /
+b11 1
+b11 ^
+#135000
+1%
+1"
+b100 *
+b100 <
+b100 W
+b100 !
+b100 2
+b100 >
+b100 l
+1+
+#140000
+0+
+b1001 /
+b1001 1
+b1001 ^
+#145000
+0%
+0"
+b110 *
+b110 <
+b110 W
+b110 !
+b110 2
+b110 >
+b110 l
+1+
+#150000
+0+
+0.
+#155000
+1+
+#160000
+1"
+b1000 *
+b1000 <
+b1000 W
+b1000 !
+b1000 2
+b1000 >
+b1000 l
+b1 4
+b1 @
+b1 j
+b1001111 '
+b1001111 9
+b1001111 Z
+b1 &
+b1 8
+b1 [
+b11 #
+b11 6
+b11 ]
+b10 3
+b10 ?
+b10 k
+0+
+1,
+#165000
+1+
+#170000
+b0 *
+b0 <
+b0 W
+b0 #
+b0 6
+b0 ]
+b0 h
+b0 3
+b0 ?
+b0 k
+b0 !
+b0 2
+b0 >
+b0 l
+0+
+1-
+0,
+#175000
+1+
+#180000
+0+
+0-
+#185000
+1+
+#190000
+0+
+b100 /
+b100 1
+b100 ^
+1.
+#195000
+0"
+b1 *
+b1 <
+b1 W
+b1 !
+b1 2
+b1 >
+b1 l
+b1 h
+1+
+#200000
+0+
+b111 /
+b111 1
+b111 ^
+#205000
+1"
+b10 *
+b10 <
+b10 W
+b10 !
+b10 2
+b10 >
+b10 l
+b10 h
+1+
+#210000
+0+
+b0 /
+b0 1
+b0 ^
+#215000
+0"
+b11 *
+b11 <
+b11 W
+b11 !
+b11 2
+b11 >
+b11 l
+b11 h
+1+
+#220000
+0+
+b10 /
+b10 1
+b10 ^
+#225000
+1%
+1"
+b100 *
+b100 <
+b100 W
+b100 !
+b100 2
+b100 >
+b100 l
+1+
+#230000
+0+
+b1001 /
+b1001 1
+b1001 ^
+#235000
+0%
+0"
+b101 *
+b101 <
+b101 W
+b101 !
+b101 2
+b101 >
+b101 l
+1+
+#240000
+0+
+0.
+#245000
+1+
+#250000
+1"
+b1000 *
+b1000 <
+b1000 W
+b10010 )
+b10010 ;
+b10010 X
+b1000 !
+b1000 2
+b1000 >
+b1000 l
+b10 5
+b10 A
+b10 i
+b11 $
+b11 7
+b11 \
+b1 3
+b1 ?
+b1 k
+0+
+1,
+#255000
+1+
+#260000
+b0 *
+b0 <
+b0 W
+b0 $
+b0 7
+b0 \
+b0 h
+b0 3
+b0 ?
+b0 k
+b0 !
+b0 2
+b0 >
+b0 l
+0+
+1-
+0,
+#265000
+1+
+#270000
+0+
+0-
+#275000
+1+
+#280000
+0+
+b10 /
+b10 1
+b10 ^
+1.
+#285000
+0"
+b1 *
+b1 <
+b1 W
+b1 !
+b1 2
+b1 >
+b1 l
+1+
+#290000
+0+
+b11 /
+b11 1
+b11 ^
+#295000
+1"
+b10 *
+b10 <
+b10 W
+b10 !
+b10 2
+b10 >
+b10 l
+1+
+#300000
+0+
+b1 /
+b1 1
+b1 ^
+#305000
+0"
+b11 *
+b11 <
+b11 W
+b11 !
+b11 2
+b11 >
+b11 l
+1+
+#310000
+0+
+#315000
+1%
+1"
+b100 *
+b100 <
+b100 W
+b100 !
+b100 2
+b100 >
+b100 l
+b1 h
+1+
+#320000
+0+
+b1001 /
+b1001 1
+b1001 ^
+#325000
+0%
+0"
+b111 *
+b111 <
+b111 W
+b111 !
+b111 2
+b111 >
+b111 l
+1+
+#330000
+0+
+0.
+#335000
+1+
+#340000
+1"
+b1000 *
+b1000 <
+b1000 W
+b1000 !
+b1000 2
+b1000 >
+b1000 l
+0+
+1,
+#345000
+1+
+#350000
+b0 *
+b0 <
+b0 W
+b0 h
+b0 !
+b0 2
+b0 >
+b0 l
+0+
+1-
+0,
+#355000
+1+
+#360000
+0+
+0-
+#365000
+1+
+#370000
+0+
+b10 /
+b10 1
+b10 ^
+1.
+#375000
+0"
+b1 *
+b1 <
+b1 W
+b1 !
+b1 2
+b1 >
+b1 l
+1+
+#380000
+0+
+b11 /
+b11 1
+b11 ^
+#385000
+1"
+b10 *
+b10 <
+b10 W
+b10 !
+b10 2
+b10 >
+b10 l
+1+
+#390000
+0+
+b1 /
+b1 1
+b1 ^
+#395000
+0"
+b11 *
+b11 <
+b11 W
+b11 !
+b11 2
+b11 >
+b11 l
+1+
+#400000
+0+
+#405000
+1%
+1"
+b100 *
+b100 <
+b100 W
+b100 !
+b100 2
+b100 >
+b100 l
+b1 h
+1+
+#410000
+0+
+b1001 /
+b1001 1
+b1001 ^
+#415000
+0%
+0"
+b111 *
+b111 <
+b111 W
+b111 !
+b111 2
+b111 >
+b111 l
+1+
+#420000
+0+
+0.
+#425000
+1+
+#430000
+1"
+b1000 *
+b1000 <
+b1000 W
+b1000 !
+b1000 2
+b1000 >
+b1000 l
+0+
+1,
+#435000
+1+
+#440000
+b0 *
+b0 <
+b0 W
+b0 h
+b0 !
+b0 2
+b0 >
+b0 l
+0+
+1-
+0,
+#445000
+1+
+#450000
+0+
+0-
+#455000
+1+
+#460000
+0+
+b1 /
+b1 1
+b1 ^
+1.
+#465000
+0"
+b1 *
+b1 <
+b1 W
+b1 !
+b1 2
+b1 >
+b1 l
+1+
+#470000
+0+
+b111 /
+b111 1
+b111 ^
+#475000
+1"
+b10 *
+b10 <
+b10 W
+b10 !
+b10 2
+b10 >
+b10 l
+b1 h
+1+
+#480000
+0+
+b0 /
+b0 1
+b0 ^
+#485000
+0"
+b11 *
+b11 <
+b11 W
+b11 !
+b11 2
+b11 >
+b11 l
+b10 h
+1+
+#490000
+0+
+b1 /
+b1 1
+b1 ^
+#495000
+1%
+1"
+b100 *
+b100 <
+b100 W
+b100 !
+b100 2
+b100 >
+b100 l
+b11 h
+1+
+#500000
+0+
+#505000
+0%
+0"
+b111 *
+b111 <
+b111 W
+b111 !
+b111 2
+b111 >
+b111 l
+1+
+#510000
+0+
+0.
+#515000
+1+
+#520000
+1"
+b1000 *
+b1000 <
+b1000 W
+b1000 !
+b1000 2
+b1000 >
+b1000 l
+0+
+1,
+#525000
+1+
+#530000
+b0 *
+b0 <
+b0 W
+b0 h
+b0 !
+b0 2
+b0 >
+b0 l
+0+
+1-
+0,
+#535000
+1+
+#540000
