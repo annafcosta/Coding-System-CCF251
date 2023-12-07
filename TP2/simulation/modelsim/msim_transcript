@@ -12,49 +12,49 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:50:42 on Dec 07,2023
+# Start time: 15:00:08 on Dec 07,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Lot.v 
 # -- Compiling module Lot
 # 
 # Top level modules:
 # 	Lot
-# End time: 01:50:42 on Dec 07,2023, Elapsed time: 0:00:00
+# End time: 15:00:08 on Dec 07,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:50:42 on Dec 07,2023
+# Start time: 15:00:09 on Dec 07,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Display.v 
 # -- Compiling module Display
 # 
 # Top level modules:
 # 	Display
-# End time: 01:50:42 on Dec 07,2023, Elapsed time: 0:00:00
+# End time: 15:00:09 on Dec 07,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:50:43 on Dec 07,2023
+# Start time: 15:00:09 on Dec 07,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/Top.v 
 # -- Compiling module Top
 # 
 # Top level modules:
 # 	Top
-# End time: 01:50:43 on Dec 07,2023, Elapsed time: 0:00:00
+# End time: 15:00:09 on Dec 07,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2 {C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:50:43 on Dec 07,2023
+# Start time: 15:00:09 on Dec 07,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2" C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v 
 # -- Compiling module lot_tb
 # 
 # Top level modules:
 # 	lot_tb
-# End time: 01:50:43 on Dec 07,2023, Elapsed time: 0:00:00
+# End time: 15:00:09 on Dec 07,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  lot_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" lot_tb 
-# Start time: 01:50:43 on Dec 07,2023
+# Start time: 15:00:09 on Dec 07,2023
 # Loading work.lot_tb
 # Loading work.Top
 # Loading work.Lot
@@ -66,9 +66,9 @@
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: gabri  Hostname: NOTEBOOK-WIN  ProcessID: 6372
-#           Attempting to use alternate WLF file "./wlftc9ah9m".
+#           Attempting to use alternate WLF file "./wlftz70h3c".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftc9ah9m
+#           Using alternate file: ./wlftz70h3c
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -83,5 +83,5 @@
 # ** Note: $stop    : C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v(140)
 #    Time: 540 ns  Iteration: 0  Instance: /lot_tb
 # Break in Module lot_tb at C:/Users/gabri/Documents/GitHub/Coding-System-CCF251/TP2/lot_tb.v line 140
-# End time: 01:59:51 on Dec 07,2023, Elapsed time: 0:09:08
+# End time: 16:49:26 on Dec 07,2023, Elapsed time: 1:49:17
 # Errors: 0, Warnings: 4

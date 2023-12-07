@@ -54,10 +54,10 @@
             hex1 = traco;
         end
         case (premio_f)
-            2'b01:begin
-                ledp1 = 2'b11;
+            2'b01:begin // caso premio 1
+                ledp1 = 2'b11; // Os leds designados para acender quando o premio 1 é sorteado
                 ledp2 = 2'b00;
-                case (p1_f)
+                case (p1_f) // Nos diplays, é ligado os segmentos correspondente a quantidade de premios sorteados
                     4'b0000:begin
                         hex1 = zero;
                         hex0 = zero;
@@ -103,7 +103,7 @@
                 endcase
             end
             2'b10: begin
-                ledp1 = 2'b00;
+                ledp1 = 2'b00; // caso o premio 2 seja sorteado, é aceso
                 ledp2 = 2'b11;
                 case (p2_f)
                     4'b0000:begin
@@ -157,7 +157,7 @@
         endcase
     end
 	 
-	always @(state_f) begin
+	always @(state_f) begin // é aceso alguns leds para acompanhar o andamento dos estados na FPGA
 			 gled <= state_f;
           if (state_f == s0) begin
             sled <= 1;
