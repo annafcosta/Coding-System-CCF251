@@ -12,7 +12,7 @@ ___
 🔵 [Autores](#autores)
 ___
 
-<div id="circuitos-combinacionais"><!-- Seu conteúdo para Descrição de Funcionamento --></div>
+<div id="circuitos-combinacionais"></div>
 
 ### 🔵 Circuitos Combinacionais
 
@@ -23,7 +23,14 @@ ___
 
 <div id="circuitos-sequenciais"></div>
 
-Para a realização do trabalho, sugeriu-se a implementação de um código que descreve um hardware utilizando a linguagem Verilog. O objetivo deste é desenvolver um sistema análogo ao funcionamento de uma loteria, o qual consiste na escolha sequencial de 5 números, entre 0 e 9, e a loteria sorteia sequencialmente 5 números, também entre 0 e 9. De maneira geral, ao realizar a jogada na loteria, é possível ganhar os dois prêmios disponíveis, 1 e 2, segundo às restrições propostas pela documentação.
+O segundo projeto, por sua vez, sugere a implementação de um código que descreve um hardware utilizando a linguagem Verilog. O objetivo deste é desenvolver um sistema análogo ao funcionamento de uma loteria, o qual consiste na escolha sequencial de 5 números, entre 0 e 9, e a loteria sorteia sequencialmente 5 números, também entre 0 e 9. De maneira geral, ao realizar a jogada na loteria, é possível ganhar os dois prêmios disponíveis, 1 e 2, segundo às restrições propostas pela documentação. Em outras palavras, o objetivo geral é automatizar a identificação de jogos ganhadores. Dessa maneira, foi criada uma máquina de estados para receber os números dos jogos, analisando ao final de cada jogo, a possibilidade de ter ganhado ou não. Assim, será determinado qual dos prêmios o jogador ganhou.
+___
 
-O objetivo geral é automatizar a identificação de jogos ganhadores. Dessa maneira, foi criada uma máquina de estados para receber os números dos jogos, analisando ao final de cada jogo, a possibilidade de ter ganhado ou não. Assim, será determinado qual dos prêmios o jogador ganhou.
+## 🔵 Autores
+
+<div id="autores"><!-- Seu conteúdo para Autores --></div>
+
+- Gabriel Benez Duarte Costa. [[User-GitHub]](https://github.com/Gabriel_Duarte)
+
+- Anna Lúisa Ferreira Costa. [[User-GitHub]](https://github.com/annafcosta)
 
