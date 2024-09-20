@@ -30,7 +30,7 @@ ___
 
 <div id="autores"><!-- Seu conteúdo para Autores --></div>
 
-- Gabriel Benez Duarte Costa. [[User-GitHub]](https://github.com/Gabriel_Duarte)
+- Gabriel Benez Duarte Costa. [[User-GitHub]](https://github.com/gabriel2036)
 
 - Anna Lúisa Ferreira Costa. [[User-GitHub]](https://github.com/annafcosta)
 
