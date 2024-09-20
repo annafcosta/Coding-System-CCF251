@@ -1,34 +1,34 @@
-# Sistemas Lógicos Digitais
+# Digital Logic Systems
 
-Este repositório contém dois projetos práticos voltados à introdução de conceitos fundamentais em sistemas lógicos digitais. Ambas as propostas exploram conteúdos envolvendo diferentes aspectos da lógica digital, introduzindo conceitos mais simples, como circuitos básicos, e finalizando com implementações de sistemas utilizando máquinas de estados.
+This repository contains two practical projects aimed at introducing fundamental concepts in digital logic systems. Both projects explore various aspects of digital logic, introducing simpler concepts like basic circuits and culminating in the implementation of systems using state machines.
 ___
 
-## Projetos
+## Projects
 
-🔵 [Circuitos Combinacionais](#circuitos-combinacionais)
+🔵 [Combinational Circuits](#circuitos-combinacionais)
 
-⚪ [Circuitos Sequencias](#circuitos-sequenciais)
+⚪ [Sequential Circuits](#circuitos-sequenciais)
 
-🔵 [Autores](#autores)
+🔵 [Authors](#autores)
 ___
 
 <div id="circuitos-combinacionais"></div>
 
-### 🔵 Circuitos Combinacionais
+### 🔵 Combinational Circuits
 
-Para a realização desse primeiro projeto, sugeriu-se a implementação de um código que descreverá um hardware utilizando a linguagem Verilog. O objetivo deste é desenvolver um sistema que irá codificar um valor de 4 bits em um valor diferente, porém equivalente em quantidade de bits, e, por fim, exibir os números criptografados em um display de 7 segmentos. Além do objetivo principal, outros pontos foram estabelecidos para o desenvolvimento do sistema codificador, sendo eles a montagem das expressões lógicas por meio da tabela verdade proposta, desenvolvendo-as através de Mapas de Karnaugh, com o intuito final de aumentar a eficiência do sistema.
+For this first project, the implementation of code to describe hardware using the Verilog language was suggested. The goal is to develop a system that will encode a 4-bit value into a different value, but still equivalent in the number of bits, and finally display the encoded numbers on a 7-segment display. In addition to the main objective, other points were established for the development of the encoder system, including the assembly of logical expressions using the proposed truth table, developing them through Karnaugh Maps with the final aim of increasing the system’s efficiency.
 ___
 
-### ⚪ Circuitos Sequenciais
+### ⚪ Sequential Circuits
 
 <div id="circuitos-sequenciais"></div>
 
-O segundo projeto, por sua vez, sugere a implementação de um código que descreve um hardware utilizando a linguagem Verilog. O objetivo deste é desenvolver um sistema análogo ao funcionamento de uma loteria, o qual consiste na escolha sequencial de 5 números, entre 0 e 9, e a loteria sorteia sequencialmente 5 números, também entre 0 e 9. De maneira geral, ao realizar a jogada na loteria, é possível ganhar os dois prêmios disponíveis, 1 e 2, segundo às restrições propostas pela documentação. Em outras palavras, o objetivo geral é automatizar a identificação de jogos ganhadores. Dessa maneira, foi criada uma máquina de estados para receber os números dos jogos, analisando ao final de cada jogo, a possibilidade de ter ganhado ou não. Assim, será determinado qual dos prêmios o jogador ganhou.
+The second project suggests the implementation of code to describe hardware using the Verilog language. The goal is to develop a system analogous to the functioning of a lottery, which involves the sequential selection of 5 numbers between 0 and 9, while the lottery sequentially draws 5 numbers, also between 0 and 9. In general, when placing a bet in the lottery, it’s possible to win one of the two available prizes, 1 and 2, according to the restrictions proposed in the documentation. In other words, the overall objective is to automate the identification of winning bets. Therefore, a state machine was created to receive the numbers from the bets, analyzing at the end of each bet whether it’s a winner or not. This will determine which prize the player has won.
 ___
 
-## 🔵 Autores
+## 🔵 Authors
 
-<div id="autores"><!-- Seu conteúdo para Autores --></div>
+<div id="autores"></div>
 
 - Gabriel Benez Duarte Costa. [[User-GitHub]](https://github.com/gabriel2036)
 
